@@ -1,0 +1,530 @@
+<!doctype html><html lang="ja"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="robots" content="noindex,nofollow"><title>修了証書 — 出会えたみなさんへ</title><style>
+:root{--paper:#faf8f1;--ink:#26231f;--muted:#61594e;--red:#a2252b;--serif:"Yu Mincho","Hiragino Mincho ProN","Noto Serif CJK JP",serif}*{box-sizing:border-box}body{margin:0;background:#e9e5dc;color:var(--ink);font-family:var(--serif);min-height:100svh;display:flex;flex-direction:column}button{font:inherit;color:inherit;cursor:pointer}button:focus-visible,select:focus-visible{outline:2px solid var(--red);outline-offset:4px}header{display:flex;justify-content:space-between;align-items:center;padding:13px clamp(14px,4vw,55px);font-size:12px;letter-spacing:.12em;gap:12px}header button,.controls button,select{background:transparent;border:1px solid #9c9385;border-radius:2px;padding:8px 13px;font-family:inherit;color:var(--ink);font-size:12px}header button:hover,.controls button:hover{background:#faf8f1}button:disabled{opacity:.35;cursor:default}.stage{flex:1;display:grid;place-items:center;padding:8px 20px;min-height:0}.book{width:min(1120px,100%);height:clamp(470px,calc(100svh - 155px),790px);position:relative;perspective:2000px;isolation:isolate;display:flex;justify-content:center;--leaf-width:50%}.book.spread{background:var(--paper);border:1px solid #c8beb0;box-shadow:0 18px 50px #342d2425,3px 4px 0 #cfc6b8,6px 7px 0 #e3dbcf}.leaf{background:var(--paper);width:var(--leaf-width);height:100%;position:relative;display:flex;flex-direction:column;padding:clamp(24px,3.1vw,50px) clamp(25px,4vw,63px) 24px;min-width:0;overflow:hidden}.left{background:linear-gradient(90deg,var(--paper) 92%,#e8dfd0 100%)}.right{background:linear-gradient(90deg,#e6ded0 0%,var(--paper) 7%)}.spread:after{content:"";position:absolute;left:50%;top:0;bottom:0;width:1px;background:#9e907d55;pointer-events:none;z-index:2}.running{font-size:11px;letter-spacing:.14em;color:var(--muted);padding-bottom:12px;border-bottom:1px solid #d8d0c2;flex:none}.page-body{flex:1;min-height:0;overflow:auto;scrollbar-width:thin;font-size:clamp(15px,1.35vw,18px);line-height:1.95;letter-spacing:.045em;padding-top:17px;overflow-wrap:anywhere}.page-body p{margin:0 0 .9em;text-indent:1em}.page-body p:last-child{margin-bottom:0}.page-body h2{font-size:1.18em;font-weight:500;margin:0 0 1em;letter-spacing:.09em}.page-body .aside{font-size:.88em;color:var(--muted)}.page-body .lead{font-weight:600}.page-body .question{border-left:1px solid #b9a88f;padding-left:1em;text-indent:0;margin-bottom:.18em}.page-body .emphasis{font-size:1.25em;text-align:center;text-indent:0;margin:.8em 0;border-bottom:1px solid #a2252b70;padding:.35em 0}.page-body .placeholder{font-size:.83em;background:#f0eadf;border:1px dashed #a69a88;padding:10px;text-indent:0;color:var(--muted)}.folio{font-size:11px;letter-spacing:.14em;color:var(--muted);text-align:center;padding-top:12px;flex:none}.stamp-block{display:flex;align-items:center;justify-content:center;gap:14px;flex-wrap:wrap;margin:12px 0;font-size:clamp(21px,3vw,35px);line-height:1.25}.stamp{color:var(--red);border:3px double var(--red);border-radius:50%;display:grid;place-items:center;width:54px;aspect-ratio:1;transform:rotate(-12deg);font-size:31px}.cover{width:min(100%,calc(clamp(470px,calc(100svh - 155px),790px)*.707));height:100%;padding:clamp(16px,2.4vw,24px);background:linear-gradient(180deg,#fffdf8 0%,#faf8f1 72%,#f3ecdf 100%);border:1px solid #bfb19b;box-shadow:0 0 0 1px #efe5d0 inset,0 0 0 7px #fbf8f1 inset,0 0 0 8px #d8c5a0 inset,0 16px 45px #342d2428,4px 5px 0 #d8cfc0;display:flex;flex-direction:column;justify-content:space-between;position:relative;overflow:hidden;isolation:isolate}.cover:before{content:"";position:absolute;inset:18px;border:1px solid #d8c6a4;pointer-events:none}.cover:after{content:"";position:absolute;inset:34px;border:1px solid #ebe2d1;pointer-events:none}.cover-inner{position:relative;z-index:1;display:flex;flex-direction:column;justify-content:space-between;height:100%;padding:clamp(14px,2vw,22px)}.cover-corner{position:absolute;width:34px;height:34px;border-color:#c0a46c;pointer-events:none;opacity:.95}.cover-corner.tl{left:30px;top:30px;border-left:2px solid;border-top:2px solid}.cover-corner.tr{right:30px;top:30px;border-right:2px solid;border-top:2px solid}.cover-corner.bl{left:30px;bottom:30px;border-left:2px solid;border-bottom:2px solid}.cover-corner.br{right:30px;bottom:30px;border-right:2px solid;border-bottom:2px solid}.cover-corner:after{content:"";position:absolute;width:12px;height:12px;border:1px solid #d6c09a;background:#fffdf7}.cover-corner.tl:after{left:-7px;top:-7px}.cover-corner.tr:after{right:-7px;top:-7px}.cover-corner.bl:after{left:-7px;bottom:-7px}.cover-corner.br:after{right:-7px;bottom:-7px}.cover-head{display:flex;justify-content:flex-end;font-size:12px;letter-spacing:.12em;color:var(--muted)}.cover-title-wrap{display:flex;flex-direction:column;align-items:center;justify-content:center;gap:14px;min-height:52%}.cover-rule{width:min(72%,360px);height:1px;background:linear-gradient(90deg,transparent,#c4a56f 18%,#c4a56f 82%,transparent);position:relative}.cover-rule:before,.cover-rule:after{content:"";position:absolute;top:50%;width:8px;height:8px;border:1px solid #c4a56f;background:#faf8f1;transform:translateY(-50%) rotate(45deg)}.cover-rule:before{left:20px}.cover-rule:after{right:20px}.cover h1{font-size:clamp(36px,4.6vw,62px);font-weight:500;letter-spacing:.26em;text-align:center;margin:0;padding-left:.26em;white-space:nowrap;color:#221f1b}.cover .recipient{text-align:center;font-size:clamp(14px,1.65vw,19px);letter-spacing:.14em}.cover .subtitle{text-align:center;font-size:11px;letter-spacing:.18em;color:#7a6f61}.cover .bodymark{text-align:center;font-size:12px;letter-spacing:.22em;color:#8f8168}.cover .open-note{text-align:center;font-size:12px;letter-spacing:.16em;color:#6e665c}.cover small{text-align:right;color:var(--muted);font-size:12px}.cover .sig{text-align:right;font-size:15px;line-height:1.95}.seal{display:inline-grid;place-items:center;border:3px double var(--red);font-size:15px;color:var(--red);line-height:1.2;padding:5px;vertical-align:middle;margin-left:12px;transform:rotate(-3deg)}.special-body{display:grid;place-content:center;text-align:center;gap:1.8em;height:100%}.special-body p{text-indent:0}.special-body .thanks{font-size:1.35em;line-height:1.8}.controls{display:flex;align-items:center;justify-content:center;gap:clamp(8px,2vw,24px);padding:15px 12px 18px;font-size:12px;flex-wrap:wrap}.controls button{min-width:86px}.progress{width:min(300px,30vw);height:2px;background:#cfc5b6;position:relative}.progress i{position:absolute;inset:0;background:var(--red);transform-origin:left;transform:scaleX(0)}.position{text-align:center;min-width:90px;font-variant-numeric:tabular-nums;letter-spacing:.06em}.hint{font-size:10px;text-align:center;color:var(--muted);margin:0 0 8px}.flap{position:absolute;top:0;bottom:0;width:var(--leaf-width);z-index:6;transform-style:preserve-3d;pointer-events:none}.flap.next{left:50%;transform-origin:left center;animation:forward .78s cubic-bezier(.45,.05,.3,1) both}.flap.prev{right:50%;transform-origin:right center;animation:backward .78s cubic-bezier(.45,.05,.3,1) both}.face{position:absolute;inset:0;width:100%;height:100%;backface-visibility:hidden;box-shadow:0 0 20px #4436272a}.face.back{transform:rotateY(180deg);background:var(--paper)}.face.front:after{content:"";position:absolute;inset:0;pointer-events:none;background:linear-gradient(90deg,#6a57422a,transparent 24%,transparent 82%,#87765c22)}@keyframes forward{0%{transform:rotateY(0)}100%{transform:rotateY(-180deg)}}@keyframes backward{0%{transform:rotateY(0)}100%{transform:rotateY(180deg)}}@keyframes singleForward{to{transform:rotateY(-105deg);opacity:0}}@keyframes singleBack{to{transform:rotateY(105deg);opacity:0}}.book.single .flap{left:0;right:0;width:100%;transform-origin:left}.book.single .flap.next{animation:singleForward .65s ease both}.book.single .flap.prev{transform-origin:right;animation:singleBack .65s ease both}.book.single .leaf{background:var(--paper)}.book.single .leaf:not(.face){box-shadow:0 12px 35px #342d2420;border:1px solid #c8beb0}.turning .leaf:not(.face){pointer-events:none}.appear .page-body>*{animation:ink .45s both;animation-delay:calc(var(--i,0)*35ms)}@keyframes ink{from{opacity:.25;transform:translateY(5px)}to{opacity:1;transform:none}}.appear .stamp,.appear .seal{animation:imprint .35s .25s both}@keyframes imprint{from{opacity:0;scale:1.6}to{opacity:1;scale:1}}.probe{position:absolute!important;visibility:hidden;pointer-events:none;top:0;left:0;z-index:-10}.no-motion *,.no-motion *:before,.no-motion *:after{animation:none!important;transition:none!important}.cover.clickable{cursor:pointer}.pagecorner{position:absolute;right:0;bottom:0;width:25px;height:25px;background:linear-gradient(135deg,#faf8f1 45%,#d9cbbb 48%,#b6a591 50%,#eee8dd 53%);border:0;padding:0}.left .pagecorner{right:auto;left:0;transform:scaleX(-1)}.book.single .pagecorner{right:0;left:auto;transform:none}.book.cover-mode{max-width:none}.book.cover-mode .flap{display:none}.book.cover-mode:before{content:"";position:absolute;inset:-8% -12%;background:radial-gradient(circle at 50% 18%,#fff1c180 0%,transparent 34%),radial-gradient(circle at 50% 55%,#ffffff40 0%,transparent 52%);pointer-events:none;z-index:-1}.cover.enter{animation:coverEnter .9s cubic-bezier(.2,.7,.2,1) both}.cover.backwards{animation:coverExit .7s ease both}@keyframes coverEnter{0%{opacity:.2;transform:translateY(10px) scale(.985);filter:blur(6px)}60%{opacity:1;transform:translateY(0) scale(1.008);filter:blur(0)}100%{opacity:1;transform:none;filter:none}}@keyframes coverExit{to{opacity:0;transform:translateY(-8px) scale(.98)}} @media(max-width:760px){header{padding:10px 14px}.stage{padding:4px 12px}.book{--leaf-width:100%;height:clamp(435px,calc(100svh - 138px),800px);max-width:540px}.leaf{padding:22px 25px 17px}.page-body{font-size:16px;line-height:1.9;padding-top:12px}.controls{padding:12px 7px;gap:9px}.controls button{min-width:75px;padding:7px 8px}.progress{display:none}.hint{margin-bottom:5px}.cover{max-width:100%}.cover:before{inset:12px}.cover:after{inset:24px}.cover-corner{width:24px;height:24px}.cover-corner.tl{left:20px;top:20px}.cover-corner.tr{right:20px;top:20px}.cover-corner.bl{left:20px;bottom:20px}.cover-corner.br{right:20px;bottom:20px}.stamp-block{font-size:25px}}@media(max-height:600px) and (min-width:761px){.book{height:440px}.leaf{padding:20px 36px 15px}.page-body{font-size:15px;line-height:1.7}}@media(prefers-reduced-motion:reduce){*,*:before,*:after{animation:none!important;transition:none!important}}
+
+/* Page navigation — preserved from Ver.10 */
+:root{--paper:#faf8f1;--ink:#26231f;--muted:#61594e;--red:#a2252b}
+header{padding-block:10px}.stage{position:relative;padding-inline:clamp(52px,7vw,100px)}
+.book{height:clamp(410px,calc(100svh - 165px),790px)}
+.book .leaf:not(.face){cursor:pointer}.book .page-body{cursor:pointer}.book .page-body p,.book .page-body h2{cursor:inherit}
+.book .running,.book .folio{cursor:pointer}.book .pagecorner{width:40px;height:40px;background:linear-gradient(135deg,transparent 48%,#c5b59d 49%,#e9dfd0 52%,#f3ede2 70%,#d7cbb9 100%);filter:drop-shadow(-2px -2px 2px #46392216);transition:filter .2s,scale .2s;transform-origin:bottom right}.book .left .pagecorner{transform-origin:bottom left}.pagecorner:hover{filter:drop-shadow(-3px -3px 3px #46392240);scale:1.12}
+.side-nav{position:absolute;top:50%;translate:0 -50%;height:68px;width:46px;background:#faf8f1;border:1px solid #b4a894;border-radius:3px;display:grid;place-items:center;box-shadow:0 3px 12px #342d2410;z-index:10;transition:background .2s,scale .2s}.side-nav:hover:not(:disabled){background:#fffdf7;scale:1.05}.side-nav:active:not(:disabled){scale:.95}.side-nav svg{width:23px;height:23px;fill:none;stroke:currentColor;stroke-width:1.5}.side-nav:disabled{opacity:.28}.side-prev{left:clamp(5px,2.1vw,32px)}.side-next{right:clamp(5px,2.1vw,32px)}
+.controls button{min-width:125px;min-height:44px;font-size:14px;background:#faf8f1}.controls #next:not(:disabled){background:#37322b;color:#faf8f1;border-color:#37322b}.controls #next:hover:not(:disabled){background:#544b40}.controls select{min-height:42px}.controls{padding:10px 12px;gap:clamp(8px,1.7vw,22px)}.hint{font-size:11px}
+/* Ver.11 — kinetic typography, no raised-paper objects. */
+.kinetic{position:relative;text-align:center;margin:12px 0 16px;padding:12px 0;isolation:isolate;line-height:1.5;min-width:0;overflow:hidden}
+.kinetic .stamp-block{margin:0;gap:14px;flex-wrap:wrap}.kinetic .stamp{flex:none;width:52px;font-size:30px;background:transparent}
+.kinetic .paper-word{font-size:clamp(23px,2.8vw,39px);font-weight:700;letter-spacing:.04em;line-height:1.45;text-indent:0;margin:0}
+.kinetic.challenge{padding:19px 0 16px}.kinetic.challenge:after{content:"";display:block;height:1px;width:100%;background:var(--red);margin-top:12px;transform-origin:left}
+.kinetic.memory .paper-word{font-size:clamp(18px,1.8vw,24px);font-weight:500;line-height:1.8}
+.kinetic.memory{padding:15px 0}.kinetic.memory:before{content:"";position:absolute;inset:0;background:linear-gradient(105deg,transparent,#dec69b42,transparent);z-index:-1;opacity:0}
+.kinetic .word-reveal{display:inline-block}.appear .kinetic.challenge .word-reveal{animation:wordFocus .8s cubic-bezier(.2,.7,.2,1) both;animation-delay:calc(.12s + var(--j,0)*.055s)}
+.appear .kinetic.challenge:after{animation:lineDraw .7s .45s both}.appear .kinetic.reject strong{animation:inkCut .6s .12s both}.appear .kinetic.reject .stamp{animation:stampDrop .28s .65s both}.appear .kinetic.memory:before{animation:lightSweep 1.8s .15s both}.appear .kinetic.memory .paper-word{animation:memoryFocus 1.05s .12s both}
+.appear .question{animation:dialogueIn .55s both;animation-delay:calc(.08s + var(--q,0)*.10s)}
+.appear .special-body>p{animation:memoryFocus 1s .15s both}.special-body .kinetic{margin:0;padding:12px 0}.special-body .kinetic .thanks{font-size:clamp(20px,2.2vw,30px);margin:0;line-height:1.8}.appear .special-body .thanks{animation:memoryFocus 1.35s .6s both}
+@keyframes wordFocus{from{opacity:0;transform:translateY(12px) scale(1.18);filter:blur(5px)}to{opacity:1;transform:none;filter:none}}
+@keyframes inkCut{from{clip-path:inset(0 100% 0 0);opacity:.35}to{clip-path:inset(0);opacity:1}}
+@keyframes lineDraw{from{transform:scaleX(0)}to{transform:scaleX(1)}}
+@keyframes lightSweep{0%{opacity:0;transform:translateX(-70%)}40%{opacity:1}100%{opacity:0;transform:translateX(70%)}}
+@keyframes memoryFocus{from{opacity:.05;filter:blur(3px);transform:translateY(6px)}to{opacity:1;filter:none;transform:none}}
+@keyframes dialogueIn{from{opacity:0;transform:translateX(-9px)}to{opacity:1;transform:none}}
+@keyframes stampDrop{from{opacity:0;transform:rotate(-12deg) scale(1.6) translateY(-8px)}to{opacity:1;transform:rotate(-12deg) scale(1)}}
+/* Ambient light lives behind the book, not on top of readable text. */
+body{isolation:isolate;position:relative;background:#e9e5dc}body:before{content:"";position:fixed;inset:0;z-index:-1;pointer-events:none;background:radial-gradient(ellipse at 70% 15%,#e4bd7f66,transparent 63%);opacity:0;transition:opacity .9s ease}body[data-scene="memory"]:before,body[data-scene="ending"]:before{opacity:1}body[data-scene="challenge"]:before{background:radial-gradient(ellipse at 50% 50%,#96837040,transparent 65%);opacity:1}
+.cover.enter h1{animation:coverInk .85s .12s both}.cover.enter .recipient{animation:memoryFocus .7s .24s both}.cover.enter .sig{animation:memoryFocus .75s .18s both}
+@keyframes coverInk{from{opacity:.1;letter-spacing:.32em;filter:blur(3px)}to{opacity:1;letter-spacing:.22em;filter:none}}
+.turning .appear .kinetic *, .turning .appear .kinetic:before,.turning .appear .kinetic:after,.turning .appear .question,.turning .appear .special-body>p{animation-play-state:paused}
+.no-motion:before{transition:none!important}.no-motion .kinetic:before{display:none}
+.cover{position:relative}.cover .open-note{align-self:center;display:flex;gap:10px;align-items:center;border-top:1px solid #c4b9a8;padding-top:13px;color:var(--muted);font-size:12px;letter-spacing:.12em}.cover .open-note:after{content:'→';font-size:17px}.cover.clickable:hover .open-note{color:var(--red)}.cover .seal{animation:stampDrop .45s .65s both}.cover.enter{animation:coverEnter .45s ease both}@keyframes coverEnter{from{opacity:.5;transform:rotateY(-13deg) scale(.97)}to{opacity:1;transform:none}}
+.book .underlay{position:absolute;top:0;bottom:0;z-index:4;pointer-events:none;cursor:default}.book .underlay.left{left:0}.book .underlay.right{right:0}.flap.next,.flap.prev{animation-duration:.49s}.book.single .flap.next,.book.single .flap.prev{animation-duration:.38s}.turning .leaf:not(.face){pointer-events:auto}.turning .underlay{pointer-events:none!important}.flap .page-body{overflow:hidden}.book.cover-mode .flap{display:block}.cover-flip{position:absolute;inset:0;margin:auto;z-index:8;pointer-events:none;transform-origin:left center;animation:coverOut .48s ease-in-out both}.cover-flip.backwards{transform-origin:right center;animation:coverBack .48s ease-in-out both}@keyframes coverOut{to{transform:rotateY(-92deg) translateX(-12px);opacity:0}}@keyframes coverBack{to{transform:rotateY(92deg) translateX(12px);opacity:0}}
+@media(max-width:760px){.stage{padding-inline:12px}.book{height:clamp(375px,calc(100svh - 150px),800px)}.side-nav{display:none}.controls button{min-width:98px;min-height:44px;padding:7px 10px}.controls select{max-width:125px;font-size:11px;min-height:36px}.controls{gap:7px;padding:10px 7px 6px}.hint{font-size:10px}.page-body{font-size:16px}.cover{width:min(100%,calc(clamp(375px,calc(100svh - 150px),800px)*.707));min-width:0}}
+@media(max-width:350px){.leaf{padding-inline:18px}.controls button{min-width:78px}.position{min-width:62px}.cover h1{font-size:28px}.cover .recipient{font-size:12px}}
+@media(max-height:600px) and (min-width:761px){.book{height:clamp(320px,calc(100svh - 120px),440px)}.cover{width:min(100%,calc(clamp(320px,calc(100svh - 120px),440px)*.707));padding:20px}}
+@media(max-width:760px){.kinetic .paper-word{font-size:26px}.kinetic.memory .paper-word{font-size:18px}.kinetic{padding-block:8px}.kinetic.challenge{padding-block:12px}.kinetic .stamp{width:46px;font-size:26px}}@media(max-height:600px) and (min-width:761px){.kinetic .paper-word{font-size:24px}.kinetic.memory .paper-word{font-size:17px}.kinetic{margin:7px 0;padding-block:5px}}
+
+/* Ver.13 — the book remains readable during every effect. */
+body{overflow-x:clip;transition:background .65s ease}
+body[data-scene="challenge"]{background:#bfb7ad}
+body[data-scene="memory"],body[data-scene="ending"]{background:#e6d5bb}
+header,.controls,.hint{position:relative;z-index:32}.side-nav{z-index:33}
+.stage{z-index:2;isolation:isolate}.book{z-index:2}
+#cinema{position:fixed;inset:0;z-index:0;pointer-events:none;overflow:hidden;visibility:hidden;display:grid;place-items:center}
+#cinema.active{visibility:visible}
+#cinema .ambient-word{position:absolute;white-space:nowrap;font-size:clamp(120px,30vw,440px);font-weight:700;line-height:1;color:transparent;-webkit-text-stroke:1px #6d453c55;animation:edgeType 1s ease-out both}
+#cinema .ambient-line{position:absolute;left:-15%;width:130%;height:2px;background:#a2252b88;transform:rotate(-12deg);animation:edgeLine .85s ease-out both}
+#cinema .ambient-glow{position:absolute;inset:0;background:radial-gradient(ellipse at 85% 75%,#edbd7570,transparent 65%);animation:ambientGlow 1.4s ease both}
+@keyframes edgeType{0%{opacity:0;transform:scale(1.15) translateX(6%)}25%{opacity:1}100%{opacity:0;transform:scale(1) translateX(-3%)}}
+@keyframes edgeLine{0%{opacity:0;transform:rotate(-12deg) scaleX(0)}35%{opacity:.85;transform:rotate(-12deg) scaleX(1)}100%{opacity:0;transform:rotate(-12deg) scaleX(1)}}
+@keyframes ambientGlow{0%,100%{opacity:0}40%{opacity:1}}
+/* Ordinary text stays readable immediately; only selected phrases move. */
+.appear .page-body>*{animation:none}
+.appear .question{animation:dialogueIn .28s both;animation-delay:calc(var(--q,0)*.045s)}
+.appear .kinetic.reject strong{animation:inkCut .26s both}
+.appear .kinetic.reject .stamp{animation:stampDrop .28s .16s both}
+.appear .kinetic.challenge .word-reveal{animation:quickImpact .48s cubic-bezier(.16,.75,.25,1) both;animation-delay:calc(var(--j,0)*.045s)}
+.appear .kinetic.challenge:after{height:2px;animation:lineDraw .42s .08s both}
+@keyframes quickImpact{from{opacity:.55;transform:scale(1.25);filter:blur(2px)}to{opacity:1;transform:none;filter:none}}
+.appear .kinetic.memory .paper-word{animation:ink .4s both}
+.appear .kinetic.memory:before{animation:lightSweep .95s both}
+.appear .special-body>p{animation:ink .4s both}
+.appear .special-body .thanks{animation:ink .65s .1s both}
+.cover.enter h1{animation:coverInk .48s both}.cover.enter .recipient{animation:ink .35s .08s both}.cover.enter .sig{animation:ink .35s both}
+.cover .seal{animation:stampDrop .35s .18s both}
+/* Do not defer readable copy until after the page turn. */
+.turning .appear .kinetic *,.turning .appear .kinetic:before,.turning .appear .kinetic:after,.turning .appear .question,.turning .appear .special-body>p{animation-play-state:running}
+.no-motion #cinema{display:none!important}.no-motion[data-scene]{background:#e9e5dc}.no-motion:before{opacity:0!important}
+@media(max-width:760px){#cinema .ambient-word,#cinema .ambient-line{display:none}}
+@media(prefers-reduced-motion:reduce){#cinema{display:none!important}body:before{opacity:0!important}}
+
+/* Ver.14 — cinema in the margins, typography in the book. */
+body[data-scene="challenge"]{background:#bcb0a3}
+body[data-scene="reject"]{background:#e5d5cb}
+body[data-scene="questions"]{background:#e0d9cd}
+body[data-scene="memory"],body[data-scene="ending"]{background:#e5d0b0}
+#cinema .margin-type{position:absolute;top:50%;font-size:clamp(45px,8.5vw,142px);line-height:1;letter-spacing:.08em;writing-mode:vertical-rl;color:#75362d;opacity:0;font-weight:600;animation:marginRush 1.25s cubic-bezier(.18,.7,.25,1) both;white-space:nowrap}
+#cinema .margin-type.a{left:1.3vw;--dir:-1}#cinema .margin-type.b{right:1.3vw;--dir:1;animation-delay:.07s}
+#cinema .blade{position:absolute;width:145vw;height:clamp(40px,8vw,110px);background:linear-gradient(90deg,transparent,#a2252b42 20%,#a2252b95 50%,#a2252b42 80%,transparent);transform:rotate(-13deg);animation:bladePass 1.05s ease both;opacity:0}
+#cinema .ring{position:absolute;width:clamp(150px,28vw,460px);aspect-ratio:1;border:2px solid #a2252b9c;border-radius:50%;animation:ringOut 1s .18s ease-out both;opacity:0}
+#cinema .ring:nth-child(2){animation-delay:.28s}
+#cinema .ribbon{position:absolute;inset:-30%;background:linear-gradient(110deg,transparent 30%,#fff9dfd0 48%,#e6ad635e 53%,transparent 70%);animation:ribbonPass 1.55s ease both;opacity:0}
+#cinema .mote{position:absolute;width:var(--size);height:var(--size);border-radius:50%;background:#fff4d3;box-shadow:0 0 14px #fff1cf;left:var(--x);top:var(--y);animation:moteRise 1.55s var(--delay) ease-out both;opacity:0}
+@keyframes marginRush{0%{opacity:0;transform:translate(calc(var(--dir)*35px),-40%) scale(1.15)}22%{opacity:.78}65%{opacity:.5}100%{opacity:0;transform:translate(0,-57%) scale(1)}}
+@keyframes bladePass{0%{opacity:0;transform:rotate(-13deg) translateX(-80%)}28%{opacity:.9}70%{opacity:.65}100%{opacity:0;transform:rotate(-13deg) translateX(80%)}}
+@keyframes ringOut{0%{opacity:.8;transform:scale(.35)}100%{opacity:0;transform:scale(5.3)}}
+@keyframes ribbonPass{0%{opacity:0;transform:translateX(-55%)}28%{opacity:.95}75%{opacity:.65}100%{opacity:0;transform:translateX(55%)}}
+@keyframes moteRise{0%{opacity:0;transform:translate(0,12px)}30%{opacity:.85}100%{opacity:0;transform:translate(14px,-75px)}}
+/* The actual copy is visible even at the first animation frame. */
+.appear .kinetic.reject strong{animation:rejectHit .55s cubic-bezier(.2,.8,.3,1) both}
+.appear .kinetic.reject .stamp{animation:stampHit .43s .16s both}
+.appear .kinetic.challenge .word-reveal{animation:challengeHit .65s cubic-bezier(.16,.8,.25,1) both;animation-delay:calc(var(--j,0)*.08s)}
+.appear .kinetic.challenge:after{animation:lineDraw .7s .05s both}
+.appear .question{animation:questionHit .48s both;animation-delay:calc(var(--q,0)*.055s)}
+.appear .question:nth-of-type(even){--enter-x:13px}
+.appear .kinetic.memory:before{animation:lightSweep 1.55s both}
+.appear .kinetic.memory .paper-word{animation:warmInk .8s both}
+.appear .special-body>p{animation:warmInk .75s both}.appear .special-body .thanks{animation:warmInk 1.05s .08s both}
+.cover.enter h1{animation:coverInk .72s both}.cover .seal{animation:sealHit .48s .2s both}@keyframes sealHit{0%{opacity:.65;transform:rotate(-3deg) scale(1.55)}48%{opacity:1;transform:rotate(-3deg) scale(.94)}100%{opacity:1;transform:rotate(-3deg) scale(1)}}
+@keyframes rejectHit{0%{transform:scale(.94);opacity:.85}35%{transform:scale(1.06)}100%{transform:none;opacity:1}}
+@keyframes stampHit{0%{opacity:.65;transform:rotate(-12deg) scale(1.55)}48%{opacity:1;transform:rotate(-12deg) scale(.92)}75%{transform:rotate(-12deg) scale(1.04)}100%{opacity:1;transform:rotate(-12deg) scale(1)}}
+@keyframes challengeHit{0%{opacity:.85;transform:scale(1.15) translateY(5px)}38%{transform:scale(.98)}100%{opacity:1;transform:none}}
+@keyframes questionHit{from{opacity:.8;transform:translateX(var(--enter-x,-13px))}to{opacity:1;transform:none}}
+@keyframes warmInk{from{opacity:.82;transform:translateY(5px)}to{opacity:1;transform:none}}
+@media(max-width:760px){#cinema .margin-type{font-size:46px;top:7%;writing-mode:horizontal-tb}#cinema .margin-type.a{left:3vw}#cinema .margin-type.b{right:3vw}#cinema .blade{height:55px}}
+
+/* Ver.15 — clear, staged visual effects without interrupting the reader. */
+#cinema{--fx:#a2252b;--paper-x:12vw;--paper-y:60px;--paper-w:76vw;--paper-h:75vh;--side-space:12vw;--right-space:12vw}
+#cinema.challenge{--fx:#8b3029}#cinema.questions{--fx:#62534a}#cinema.memory,#cinema.ending{--fx:#a36e35}
+#cinema .margin-type{font-size:clamp(24px,calc(var(--side-space)*.35),76px);top:50%;line-height:1.15;letter-spacing:.045em;color:var(--fx);text-shadow:0 2px 0 #faf8f168;animation:marginRead 1.95s cubic-bezier(.16,.7,.22,1) both}
+#cinema .margin-type.a{left:calc(var(--side-space)*.73);--dir:-1;--align:-50%}
+#cinema .margin-type.b{left:calc(100% - var(--right-space)*.73);right:auto;--dir:1;--align:-50%;animation-delay:.11s}
+#cinema .blade{height:clamp(24px,5.5vw,75px);background:linear-gradient(90deg,transparent,#a2252b72 20%,#a2252bb0 50%,#a2252b72 80%,transparent);animation-duration:1.65s}
+#cinema .ring{width:calc(var(--paper-w) + 30px);height:calc(var(--paper-h) + 30px);aspect-ratio:auto;left:calc(var(--paper-x) - 15px);top:calc(var(--paper-y) - 15px);border:2px solid #a2252bb8;border-radius:12px;animation:framePulse 1.65s .16s ease-out both;transform-origin:center}
+#cinema .ring:nth-child(2){animation-delay:.34s}
+#cinema .ribbon{animation-duration:2.15s;background:linear-gradient(110deg,transparent 30%,#fff9dff5 48%,#e6ad6390 53%,transparent 70%)}
+#cinema .mote{background:#fff6d5;box-shadow:0 0 8px #fff5d6,0 0 2px #a36e35;animation:moteVisible 2.1s var(--delay) ease-out both}
+#cinema .edge-trace{position:absolute;left:calc(var(--paper-x) - 5px);top:calc(var(--paper-y) - 5px);width:calc(var(--paper-w) + 10px);height:calc(var(--paper-h) + 10px);border:1px solid var(--fx);border-radius:3px;box-shadow:0 0 14px color-mix(in srgb,var(--fx) 38%,transparent);animation:traceFade 1.9s ease both}
+#cinema.memory .edge-trace,#cinema.ending .edge-trace{border-color:#b88b48;box-shadow:0 0 24px #fff6d5,0 0 48px #f0be775c}
+@keyframes traceFade{0%,100%{opacity:0}20%,64%{opacity:.95}}
+@keyframes framePulse{0%{opacity:0;transform:scale(.99)}25%{opacity:.85}65%{opacity:.5}100%{opacity:0;transform:scale(1.25)}}
+@keyframes marginRead{0%{opacity:0;transform:translate(calc(var(--align) + var(--dir)*22px),-43%) scale(.94)}20%{opacity:.9;transform:translate(var(--align),-50%) scale(1)}72%{opacity:.85;transform:translate(var(--align),-50%) scale(1)}100%{opacity:0;transform:translate(var(--align),-57%) scale(1)}}
+@keyframes moteVisible{0%{opacity:0;transform:translateY(12px)}24%,62%{opacity:.95}100%{opacity:0;transform:translate(12px,-65px)}}
+/* Let the page finish turning before selected phrases perform, never hide ordinary copy. */
+.turning .appear .kinetic *,.turning .appear .kinetic:before,.turning .appear .kinetic:after,.turning .appear .question,.turning .appear .special-body>p{animation-play-state:paused}
+.appear .kinetic.reject .stamp{animation:stampHit .62s .30s both}
+.appear .kinetic.challenge .word-reveal{animation:challengeHit .9s cubic-bezier(.16,.8,.25,1) both;animation-delay:calc(var(--j,0)*.13s)}
+.appear .kinetic.challenge:after{animation:lineDraw .95s .12s both}
+.appear .question{animation:questionHit .62s both;animation-delay:calc(var(--q,0)*.08s)}
+.appear .kinetic.memory:before{animation:lightSweep 2s both}
+.appear .special-body .thanks{animation:warmInk 1.3s .2s both}
+.cover .seal{animation:sealHit .6s .35s both}
+@media(max-width:1180px){#cinema .margin-type{display:none}}
+@media(max-width:760px){#cinema .margin-type{display:none}#cinema .blade{height:36px}#cinema .edge-trace{border-width:2px}#cinema .ring{border-width:2px;animation-duration:1.5s}#cinema .ribbon{background:linear-gradient(110deg,transparent 25%,#fff9dfff 48%,#e6ad6390 53%,transparent 75%)}}
+
+
+/* Ver.16 — gratitude: typography stays legible throughout. */
+.kinetic.mentor{padding:16px 0;margin:10px 0 14px}.kinetic.mentor .paper-word{font-size:clamp(27px,3vw,41px);font-weight:600;letter-spacing:.11em}
+.kinetic.mentor:after{content:"";display:block;width:46%;height:1px;margin:12px auto 0;background:var(--red);transform-origin:left}
+.appear .kinetic.mentor .paper-word{animation:mentorInk 1.05s cubic-bezier(.15,.8,.3,1) both}.appear .kinetic.mentor:after{animation:lineDraw .95s .15s both}
+@keyframes mentorInk{0%{transform:translateY(6px) scale(.94);opacity:.82}45%{transform:scale(1.04);opacity:1}100%{transform:none;opacity:1}}
+.kinetic.together{padding:13px 16px;border-block:1px solid #c4ad89;background:#f3ecdf;text-align:left;margin:10px 0 14px}.kinetic.together p{margin:0;text-indent:0;font-weight:600;line-height:1.9}.appear .kinetic.together{animation:ink .65s both}
+.kinetic.interview{margin:12px 0 16px;padding:19px 14px 17px 20px;border-left:3px solid #a2252b;background:#f0eadd;text-align:left}.kinetic.interview .interview-quote{font-size:clamp(19px,2vw,26px);font-weight:600;line-height:1.65;text-indent:0;margin:0;position:relative;z-index:1}.kinetic.interview:before{content:"“";position:absolute;right:5px;top:-28px;font:140px Georgia,serif;color:#a2252b12;pointer-events:none}.appear .kinetic.interview .interview-quote{animation:mentorInk 1s both}
+body[data-scene="mentor"]{background:#ddd2c5}body[data-scene="together"]{background:#e6d5bb}body[data-scene="interview"]{background:#c9c0b3}body[data-scene="together"]:before{opacity:1}
+#cinema.mentor{--fx:#a2252b}#cinema.together{--fx:#a36e35}#cinema.interview{--fx:#796349}
+#cinema .mentor-stroke{position:absolute;left:0;right:0;height:2px;top:calc(var(--paper-y) + var(--paper-h)*.72);background:linear-gradient(90deg,transparent,#a2252b 18%,#a2252b 82%,transparent);animation:mentorStroke 2.05s ease both}
+@keyframes mentorStroke{0%{transform:scaleX(0);opacity:0}28%,65%{transform:scaleX(1);opacity:.85}100%{opacity:0;transform:scaleX(1)}}
+#cinema .interview-frame{position:absolute;inset:calc(var(--paper-y) - 12px) calc(var(--right-space) - 12px) auto calc(var(--paper-x) - 12px);height:calc(var(--paper-h) + 24px);border:2px solid #796349;clip-path:polygon(0 0,14% 0,14% 3%,3% 3%,3% 16%,0 16%,0 0,100% 0,100% 16%,97% 16%,97% 3%,86% 3%,86% 0,100% 0,100% 100%,86% 100%,86% 97%,97% 97%,97% 84%,100% 84%,100% 100%,0 100%,0 84%,3% 84%,3% 97%,14% 97%,14% 100%,0 100%);animation:traceFade 2.2s both}
+#cinema .quote-mark{position:absolute;font:clamp(70px,12vw,170px) Georgia,serif;color:#796349;animation:quoteFloat 2.15s both;line-height:1;top:40%}#cinema .quote-mark.a{left:calc(var(--side-space)*.28)}#cinema .quote-mark.b{right:calc(var(--right-space)*.28)}
+@keyframes quoteFloat{0%{opacity:0;transform:translateY(22px)}20%,70%{opacity:.75;transform:none}100%{opacity:0;transform:translateY(-15px)}}
+@media(max-width:1180px){#cinema .quote-mark{display:none}}
+@media(max-width:760px){.kinetic.interview{padding:12px 10px 12px 15px}.kinetic.together{padding:10px 12px}}
+.page-body{overflow-x:hidden}
+#cinema .quote-mark{top:22%}
+
+/* Ver.17 — a different cinematic grammar for each beat; effects remain behind the book. */
+#cinema .fx-vector{position:absolute;inset:0;width:100%;height:100%;overflow:hidden;pointer-events:none}
+#cinema .fx-vector path{fill:none;stroke:var(--fx);stroke-width:1.7;stroke-linecap:round;stroke-linejoin:round;vector-effect:non-scaling-stroke;stroke-dasharray:1;stroke-dashoffset:1;animation:draw17 2.25s var(--d,0s) ease both}
+#cinema .fx-vector .gold{stroke:#9d7138;stroke-width:2}
+#cinema .fx-vector .fine{stroke-width:.85}
+#cinema .fx-vector .inkdot{fill:#a2252b;animation:inkDot17 1.8s var(--d,0s) both;transform-box:fill-box;transform-origin:center}
+#cinema .fx-vector .star{fill:#fff3cf;stroke:#9d7138;stroke-width:.6;animation:star17 2.4s var(--d,0s) both;transform-box:fill-box;transform-origin:center}
+@keyframes draw17{0%{stroke-dashoffset:1;opacity:0}12%{opacity:.95}52%,76%{stroke-dashoffset:0;opacity:.92}100%{stroke-dashoffset:0;opacity:0}}
+@keyframes inkDot17{0%{opacity:0;scale:0}22%{opacity:.86;scale:1.3}65%{opacity:.72;scale:1}100%{opacity:0;scale:.5}}
+@keyframes star17{0%{opacity:0;scale:.3}35%,65%{opacity:1;scale:1}100%{opacity:0;scale:.65}}
+#cinema .margin-type{font-weight:700;animation-duration:2.2s}
+#cinema .quote-mark{animation-duration:2.3s}
+#cinema .mote{animation-duration:2.35s}
+#cinema .ribbon{animation-duration:2.3s}
+#cinema .edge-trace{animation-duration:2.2s}
+#cinema .blade{height:clamp(18px,3.8vw,54px);animation-duration:1.8s}
+.kinetic.challenge .paper-word{position:relative;isolation:isolate}
+.kinetic.challenge .paper-word:before{content:"";position:absolute;inset:5% 0;z-index:-1;background:linear-gradient(105deg,transparent 0%,#a2252b17 40%,#a2252b27 50%,transparent 70%);opacity:0;pointer-events:none}
+.appear .kinetic.challenge .paper-word:before{animation:inkPass17 1.25s .1s both}
+@keyframes inkPass17{0%{opacity:0;transform:translateX(-100%)}25%,50%{opacity:1}100%{opacity:0;transform:translateX(100%)}}
+/* Callback: the rejected manuscript becomes a finished work, not another obstacle. */
+body[data-scene="resolve"]{background:#e6d9c7}
+#cinema.resolve{--fx:#a2252b}
+.resolve-line{position:relative;isolation:isolate}
+.resolve-line:after{content:"";position:absolute;left:1em;right:0;bottom:0;height:1px;background:#a2252b;transform-origin:left;opacity:.65}
+.appear .resolve-line:after{animation:lineDraw 1.1s .15s both}
+/* Short, visible perimeter effects also work when the paper fills a phone screen. */
+@media(max-width:1180px){#cinema .fx-vector path{stroke-width:2.2}#cinema .fx-vector .fine{stroke-width:1.2}}
+.no-motion .resolve-line:after{display:none}
+
+
+/* Ver.19 — ceremonial certificate / opening overture */
+.cover{container-type:inline-size;background:radial-gradient(ellipse at 50% 36%,#fffdf6 0%,#faf8ef 66%,#f4eddf 100%);padding:0;box-shadow:0 0 0 1px #e7d8b7 inset,0 22px 65px #342d2430,4px 5px 0 #d8cfc0;border-color:#bca87c;}
+.cover:before{display:none}.cover:after{animation:certSheen 2.1s .2s ease-out both;inset:0;background:linear-gradient(115deg,transparent 26%,#fff5cf00 39%,#fff6cf91 50%,transparent 63%);mix-blend-mode:soft-light;z-index:2}
+.cert-frame{position:absolute;inset:0;width:100%;height:100%;pointer-events:none;z-index:0}.cover-inner{padding:8.5% 11%;height:100%;width:100%;}.cover small{font-size:clamp(9px,2.6cqw,12px);margin-top:2%;margin-right:1%;letter-spacing:.14em}.cert-heading{text-align:center;align-self:center;width:100%;margin-top:-5%;}.cert-crest{width:48%;height:auto;display:block;margin:0 auto 7%;}.cover h1{font-size:clamp(27px,12.2cqw,61px);letter-spacing:.18em;padding-left:.18em;margin:0 0 5%;font-weight:600;color:#29251f;text-shadow:none;line-height:1.4}.cert-rule{display:flex;justify-content:center;align-items:center;gap:7px;margin:0 auto 8%;width:65%;}.cert-rule:before,.cert-rule:after{content:"";height:1px;flex:1;background:linear-gradient(90deg,transparent,#b08a45)}.cert-rule:after{transform:scaleX(-1)}.cert-rule i{display:block;width:5px;height:5px;background:#b08a45;transform:rotate(45deg)}.cover .recipient{font-size:clamp(12px,4.0cqw,19px);letter-spacing:.08em;line-height:1.65;white-space:normal;color:#39332b}.cover .open-note{align-self:center;justify-content:center;width:max-content;max-width:100%;font-size:clamp(10px,2.8cqw,13px);border:0;border-bottom:1px solid #b08a45;padding:0 4px 8px;margin:0 auto 3%;color:#66502b}.cover .sig{font-size:clamp(10px,3.1cqw,15px);line-height:1.65;margin-right:1%;margin-bottom:1%}.cover .seal{font-size:clamp(10px,3.2cqw,15px);margin-left:7px}.cover.enter .cert-frame{animation:frameArrival .85s ease both}.cover.enter .cert-crest{animation:crestArrival .85s .06s both}.cover.enter h1{animation:coverInk .72s .12s both}.cover.enter .cert-rule{animation:crestArrival .7s .2s both}.cover.enter .recipient{animation:ink .45s .26s both}.cert-final .cert-heading{margin-top:0}.cert-final .cert-crest{width:39%;margin-bottom:4%}
+@keyframes certSheen{from{transform:translateX(-100%);opacity:0}25%{opacity:.8}to{transform:translateX(100%);opacity:0}}@keyframes frameArrival{from{opacity:.35;scale:.97}to{opacity:1;scale:1}}@keyframes crestArrival{from{opacity:0;transform:translateY(7px)}to{opacity:1;transform:none}}
+#opening-ceremony{position:fixed;inset:0;z-index:2;pointer-events:none;overflow:hidden;visibility:hidden}#opening-ceremony.active{visibility:visible}#opening-ceremony .ceremony-wash{position:absolute;inset:0;background:radial-gradient(ellipse at 50% 50%,transparent 35%,#c2974d26 70%,#b58c4438 100%);animation:ceremonyWash 1.65s ease both}#opening-ceremony .ceremony-ring{position:absolute;left:50%;top:50%;width:var(--ring-w);height:var(--ring-h);border:1px solid #b18a44;border-radius:4px;box-shadow:0 0 10px #d6b56b80;animation:ceremonyRing 1.45s var(--delay) cubic-bezier(.15,.65,.25,1) both}#opening-ceremony .ceremony-ray{position:absolute;left:50%;top:50%;width:clamp(65px,18vw,280px);height:1px;background:linear-gradient(90deg,#fff0ba00,#b58b45,#fff0ba00);transform-origin:0 50%;animation:ceremonyRay 1.45s var(--delay) ease-out both}#opening-ceremony .ceremony-spark{position:absolute;left:var(--x);top:var(--y);width:var(--size);height:var(--size);background:#fff1c1;border:1px solid #b28a43;box-shadow:0 0 9px #d7af55;animation:ceremonySpark 1.55s var(--delay) ease-out both}#opening-ceremony .ceremony-edge{position:absolute;inset:0;border:2px solid #b38b45;animation:ceremonyWash 1.55s ease both}
+@keyframes ceremonyWash{0%{opacity:0}24%,50%{opacity:1}100%{opacity:0}}@keyframes ceremonyRing{0%{transform:translate(-50%,-50%) scale(.55);opacity:0}25%{opacity:.8}100%{transform:translate(-50%,-50%) scale(2.25);opacity:0}}@keyframes ceremonyRay{0%{transform:rotate(var(--angle)) translateX(0) scaleX(.1);opacity:0}26%{opacity:.85}100%{transform:rotate(var(--angle)) translateX(65vmax) scaleX(1);opacity:0}}@keyframes ceremonySpark{0%{opacity:0;transform:translate(var(--dx),var(--dy)) rotate(45deg) scale(.3)}35%{opacity:1}100%{opacity:0;transform:translate(0,0) rotate(135deg) scale(.7)}}.no-motion #opening-ceremony{display:none!important}
+@media(max-width:760px){.cover{padding:0}.cover-inner{padding:11% 10%}.cert-heading{margin-top:0}.cover .sig{margin-bottom:4%}}@media(max-height:600px){.cert-crest{width:36%;margin-bottom:3%}.cover .cert-heading{margin-top:0}.cert-final .cert-crest{width:30%}.cover-inner{padding:8% 10%}.cert-rule{margin-bottom:4%}}
+
+/* Keep the ceremonial frame inside the viewport and preserve certificate proportions. */
+body{overflow-x:clip}.book.cover-mode:before{inset:0}.cover{height:auto;aspect-ratio:210/297;max-height:100%;align-self:center}.cover small{text-align:center;margin:5% 0 0}.cover .sig{padding-right:5%;margin-bottom:7%}.cert-final .cert-heading{margin-top:0}.cover-flip{max-height:100%}
+@media(max-height:600px){.cover small{margin-top:2%}.cover .sig{margin-bottom:3%}.cert-final .cert-crest{width:26%}.cert-final .cert-rule{margin-bottom:3%}}
+
+/* Ver.21: literary jacket and an independently typeset certificate */
+.cover.literary-cover,.cover.school-certificate{width:min(100%,calc(clamp(375px,calc(100svh - 165px),790px)*.707));height:auto;aspect-ratio:210/297;max-height:100%;padding:0;container-type:inline-size;position:relative;overflow:hidden;isolation:isolate}
+.cover.literary-cover{background:#223438;color:#f5f0e4;border:1px solid #18282b;box-shadow:3px 3px 0 #b8b1a1,6px 6px 0 #dbd5c8,0 22px 55px #292d2940;}
+.cover.literary-cover:before{display:block;inset:0 auto 0 6%;width:1px;border:0;background:#b5b7a34d;box-shadow:3px 0 4px #0003;z-index:0}
+.cover.literary-cover:after{display:none;animation:none}
+.literary-cover .jacket{position:relative;display:grid;grid-template-columns:1fr auto;grid-template-rows:auto 1fr auto;gap:5%;height:100%;padding:10% 12% 8% 14%;z-index:1}
+.jacket-date{grid-column:1/-1;font-size:clamp(10px,2.5cqw,13px);letter-spacing:.14em;color:#e2ded0;align-self:start;display:flex;justify-content:space-between;border-bottom:1px solid #bcbba570;padding-bottom:4%}
+.cover.literary-cover h1{grid-column:2;grid-row:2;writing-mode:vertical-rl;align-self:center;justify-self:end;font-size:clamp(39px,16cqw,83px);letter-spacing:.15em;padding:0;margin:0;font-weight:500;color:#f5f0e4;line-height:1.2;text-shadow:none}
+.literary-cover .jacket-sub{grid-column:1;grid-row:2;align-self:end;padding-bottom:11%;display:flex;flex-direction:column;gap:12px;align-items:flex-start;min-width:0}
+.literary-cover .recipient{font-size:clamp(12px,4.3cqw,21px);line-height:1.85;color:#f5f0e4;letter-spacing:.09em;text-align:left}
+.jacket-mark{width:clamp(28px,12cqw,65px);height:2px;background:#d0b37a;display:block}
+.literary-cover .open-note{grid-column:1/-1;align-self:end;justify-self:start;justify-content:flex-start;border:0;border-top:1px solid #bcbba570;width:100%;margin:0;padding:4% 0 0;color:#e2ded0;font-size:clamp(11px,3cqw,15px);letter-spacing:.1em;display:flex;justify-content:space-between}
+.literary-cover.clickable:hover .open-note{color:#f5d699}
+.cover.literary-cover.enter h1{animation:jacketTitle .85s .08s both}.cover.literary-cover.enter .jacket-sub{animation:jacketSub .7s .28s both}
+@keyframes jacketTitle{from{opacity:0;clip-path:inset(0 0 100% 0);transform:translateY(6px)}to{opacity:1;clip-path:inset(0);transform:none}}
+@keyframes jacketSub{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:none}}
+.cover.school-certificate{background:#fffdf6;color:#24201b;border:1px solid #c5b28c;box-shadow:3px 4px 0 #dfd6c3,0 20px 55px #342d2428}
+.cover.school-certificate:before,.cover.school-certificate:after{display:none;animation:none}
+.school-certificate .certificate-border{position:absolute;inset:0;width:100%;height:100%;z-index:0;pointer-events:none}
+.school-certificate .certificate-layout{position:relative;z-index:1;display:flex;flex-direction:column;justify-content:space-between;height:100%;padding:14% 13% 13%;gap:4%;}
+.school-certificate .certificate-date{font-size:clamp(10px,2.9cqw,14px);letter-spacing:.10em;text-align:right;color:#514638}
+.cover.school-certificate h1{font-size:clamp(29px,11.4cqw,58px);letter-spacing:.19em;padding-left:.19em;line-height:1.25;margin:0 0 10%;font-weight:600;color:#25211b;text-align:center}
+.school-certificate .certificate-content{flex:1;display:flex;flex-direction:column;justify-content:center;min-height:0}
+.school-certificate .certificate-recipient{font-size:clamp(14px,4.6cqw,23px);letter-spacing:.12em;line-height:1.6;padding-bottom:3%;border-bottom:1px solid #c7b58b;text-align:left;color:#25211b}
+.school-certificate .certificate-message{font-size:clamp(11px,3.6cqw,17px);letter-spacing:.04em;line-height:2.1;margin:9% 0 0;text-align:left;}
+.school-certificate .certificate-signature{font-size:clamp(11px,3.4cqw,16px);line-height:1.7;text-align:right;display:flex;flex-direction:column;gap:9px;align-items:flex-end}
+.school-certificate .signature-line{display:flex;align-items:center;justify-content:flex-end;gap:10px;white-space:nowrap}
+.school-certificate .seal{margin:0;color:#a2252b;border:3px double #a2252b;font-size:clamp(10px,3.7cqw,17px);padding:5px;line-height:1.1;transform:rotate(-3deg)}
+.school-certificate.enter .certificate-border{animation:certBorder21 .9s ease both}.school-certificate.enter .certificate-message{animation:ink .65s .15s both}.school-certificate.enter .seal{animation:sealHit .6s .45s both}
+@keyframes certBorder21{from{opacity:.2}to{opacity:1}}
+@media(max-height:600px) and (min-width:761px){.cover.literary-cover,.cover.school-certificate{width:min(100%,calc(clamp(320px,calc(100svh - 120px),440px)*.707))}}
+@media(max-width:760px){.cover.literary-cover,.cover.school-certificate{width:min(100%,calc(clamp(375px,calc(100svh - 150px),800px)*.707))}.school-certificate .certificate-layout{padding:13% 12%}.literary-cover .jacket{padding:10% 11% 8% 13%}}
+
+/* Ver.22 — typeset for reading, stage the selected lines. */
+:root{--ink:#211e1a;--muted:#554c40;--paper:#fcfaf5}
+.book{width:min(1030px,100%)}
+.leaf{padding-inline:clamp(30px,3.5vw,55px);padding-top:clamp(25px,3vw,46px)}
+.page-body{font-size:clamp(17px,1.4vw,19px);line-height:1.95;letter-spacing:.035em;padding-top:20px;overflow-wrap:normal;line-break:strict;word-break:normal;scrollbar-color:#9b8d7a transparent}
+.page-body p{margin:0 0 .75em;text-indent:1em}.page-body .aside{font-size:.88em;color:#554c40;line-height:1.85}
+.page-body .question{margin-bottom:.28em;text-indent:0}.running{font-size:12px;color:#554c40;letter-spacing:.09em}.folio{color:#554c40;font-size:12px}
+.page-body h2{font-size:1.24em;line-height:1.65;margin:0 0 1em;text-wrap:pretty}
+.appear .page-body>p:not(.question):not(.resolve-line){animation:none;opacity:1;transform:none}
+.appear .page-body>h2{animation:none;opacity:1}
+.kinetic{margin-block:1em;padding-block:12px}.kinetic .paper-word{font-size:clamp(25px,3vw,40px);line-height:1.55;letter-spacing:.035em}.kinetic.challenge .word-reveal{display:inline-block}.kinetic.memory .paper-word{font-size:clamp(19px,2vw,27px);font-weight:600}.kinetic.mentor .paper-word{font-size:clamp(28px,3.2vw,43px)}
+.kinetic.together{background:#f1e9da;border-color:#b59c72}.kinetic.interview{background:#f0e8dc}.kinetic.interview .interview-quote{font-size:clamp(20px,2vw,27px);line-height:1.7}
+.appear .kinetic.challenge .word-reveal{animation-duration:1.15s}.appear .kinetic.mentor .paper-word{animation-duration:1.3s}.appear .kinetic.reject .stamp{animation:stampHit .78s .42s both}.appear .question{animation-duration:.72s;animation-delay:calc(var(--q,0)*.115s)}
+.special-body{gap:1.3em}.special-body .thanks{font-size:1.5em;line-height:1.65}
+/* Keep moving effects outside the reading surface, with a clear hold before fade. */
+#cinema .margin-type{font-size:clamp(24px,calc(var(--side-space)*.43),91px);color:var(--fx);animation:margin22 2.65s cubic-bezier(.16,.7,.22,1) both;letter-spacing:.035em}
+#cinema .margin-type.a{left:calc(var(--side-space)*.54)}#cinema .margin-type.b{left:calc(100% - var(--right-space)*.54)}
+#cinema .fx-vector path{stroke-width:2.5;animation:draw22 2.7s var(--d,0s) both}#cinema .fx-vector .fine{stroke-width:1.4}#cinema .fx-vector .gold{stroke-width:2.8;stroke:#87602f}
+#cinema .ring{animation-duration:2.05s;border-width:2.5px}#cinema .edge-trace{animation:traceFade 2.7s ease both;border-width:2px}
+#cinema .mote{animation-duration:2.6s;background:#fff8da;box-shadow:0 0 6px #fff9e0,0 0 3px #986638}
+#cinema .blade{animation-duration:2.15s}#cinema .ribbon{animation-duration:2.7s}
+@keyframes margin22{0%{opacity:0;transform:translate(calc(var(--align) + var(--dir)*18px),-46%) scale(.94)}22%{opacity:.96;transform:translate(var(--align),-50%) scale(1)}76%{opacity:.96;transform:translate(var(--align),-50%) scale(1)}100%{opacity:0;transform:translate(var(--align),-53%) scale(1)}}
+@keyframes draw22{0%{stroke-dashoffset:1;opacity:0}12%{opacity:.95}43%,76%{stroke-dashoffset:0;opacity:.95}100%{stroke-dashoffset:0;opacity:0}}
+@media(min-width:1000px){#cinema .margin-type{display:block}#cinema .quote-mark{display:block}}
+@media(max-width:999px){#cinema .margin-type,#cinema .quote-mark{display:none}#cinema .edge-trace{border-width:2px}}
+@media(max-width:760px){.book{width:100%}.leaf{padding:22px clamp(19px,6vw,32px) 18px}.page-body{font-size:17px;line-height:1.9;padding-top:14px;letter-spacing:.015em}.running,.folio{font-size:11px}.kinetic{margin-block:.7em;padding-block:8px}.kinetic .paper-word{font-size:27px}.kinetic.memory .paper-word{font-size:20px}.kinetic.mentor .paper-word{font-size:30px}.kinetic.interview .interview-quote{font-size:21px}.special-body .thanks{font-size:1.35em}}
+@media(max-height:600px) and (min-width:761px){.leaf{padding:20px 30px 14px}.page-body{font-size:16px;line-height:1.8;padding-top:12px}.kinetic{margin-block:.6em;padding-block:6px}.kinetic .paper-word{font-size:25px}.kinetic.memory .paper-word{font-size:19px}}
+
+
+/* Ver.23: editorial typography, no extra visual decoration. */
+.page-body .normal-weight{font-weight:400}.page-body .aside{text-indent:0;text-align:right;line-height:1.85;margin-top:-.15em;margin-bottom:1.1em}.page-body .parallel{text-indent:0;padding-left:1em;line-height:2.05}.page-body .kinetic.together p{margin:0;text-indent:0}.page-body .kinetic.together p+p{margin-top:.6em}.page-body h2{break-after:avoid}.page-body .question{line-height:1.7}.special-body .thanks{word-break:normal;overflow-wrap:anywhere}.page-body{font-kerning:normal}.page-body p{font-feature-settings:"palt" 0}
+@media(max-width:760px){.page-body .aside{font-size:.9em}.page-body .parallel{padding-left:.5em}}
+
+/* Ver.24: a restrained cinematic grammar, distinct beats rather than stacked ornaments. */
+:root{--scene-red:#A2252B;--scene-gold:#A88B51;--scene-dark:#40372F}
+body[data-scene="reject"]{background:#e7dbd3}body[data-scene="challenge"]{background:#c9bcb0}body[data-scene="mentor"]{background:#e3d9d0}body[data-scene="questions"]{background:#e1ddd5}body[data-scene="interview"]{background:#d3ccc0}body[data-scene="memory"],body[data-scene="together"],body[data-scene="ending"]{background:#e8dbc3}body[data-scene="resolve"]{background:#e8dfd3}
+#cinema{--fx:var(--scene-red)}#cinema.challenge,#cinema.mentor,#cinema.resolve{--fx:var(--scene-red)}#cinema.questions,#cinema.interview{--fx:var(--scene-dark)}#cinema.memory,#cinema.together,#cinema.ending,#cinema.seal{--fx:var(--scene-gold)}
+#cinema .margin-type{font-weight:600;text-shadow:none;animation-duration:1.9s}#cinema.challenge .margin-type{animation:decisive24 2.15s cubic-bezier(.16,.8,.24,1) both}#cinema.challenge .margin-type.b{animation-delay:.09s}#cinema.reject .margin-type{animation:decisive24 1.75s both}#cinema.mentor .margin-type{animation:margin22 2.2s both}
+#cinema .fx-vector path{stroke-width:2;animation:draw22 2.2s var(--d,0s) both}#cinema .fx-vector .fine{stroke-width:1}#cinema.challenge .fx-vector path,#cinema.reject .fx-vector path{animation:draw22 1.6s var(--d,0s) cubic-bezier(.16,.8,.25,1) both}
+#cinema .ring{border-radius:0;animation:framePulse 1.15s .12s ease-out both;box-shadow:none}#cinema .blade{height:clamp(8px,1.8vw,23px);background:linear-gradient(90deg,transparent,#a2252b 45%,#a2252b 55%,transparent);animation:bladePass 1.3s ease both}
+#cinema .mentor-stroke{height:2px;animation:mentorStroke 2.1s both}
+#cinema .ribbon{background:linear-gradient(110deg,transparent 25%,#fff4d5b0 48%,#d0b37a50 57%,transparent 78%);animation:warm24 3s cubic-bezier(.23,.55,.35,1) both}
+#cinema .mote{box-shadow:none;background:#fff4d5;border:1px solid #a88b5170;animation:moteVisible 2.7s var(--delay) ease-out both}
+#cinema .edge-trace{box-shadow:none;border-radius:0;border-width:1px;animation:traceFade 2.6s ease both}#cinema.memory .edge-trace,#cinema.ending .edge-trace{box-shadow:none;border-color:#a88b51}
+#cinema .quote-mark{font-weight:400;animation-duration:2.2s}#cinema .interview-frame{animation-duration:2.2s;border-color:#40372f}
+.appear .kinetic.reject strong{animation:rejectHit .38s cubic-bezier(.16,.8,.25,1) both}.appear .kinetic.reject .stamp{animation:stamp24 .52s .15s cubic-bezier(.16,.8,.25,1) both}.appear .kinetic.challenge .word-reveal{animation:challengeHit .64s cubic-bezier(.16,.8,.25,1) both;animation-delay:calc(var(--j,0)*.12s)}.appear .kinetic.challenge:after{animation:lineDraw .65s .12s both}.appear .kinetic.challenge .paper-word:before{animation:none}
+.appear .kinetic.mentor .paper-word{animation:mentorInk .85s both}.appear .kinetic.mentor:after{animation:lineDraw .85s .12s both}
+.appear .kinetic.memory .paper-word,.appear .special-body>p{animation:warmInk 1.1s both}.appear .special-body .thanks{animation:warmInk 1.65s .4s both}.appear .kinetic.memory:before{animation:lightSweep 2.8s both}
+.turning .appear .kinetic,.turning .appear .resolve-line:after{animation-play-state:paused}
+@keyframes stamp24{0%{opacity:.7;transform:rotate(-12deg) scale(1.45)}42%{opacity:1;transform:rotate(-12deg) scale(.97)}100%{opacity:1;transform:rotate(-12deg) scale(1)}}
+@keyframes decisive24{0%{opacity:0;transform:translate(calc(var(--align) + var(--dir)*20px),-50%) scale(1.07)}18%,74%{opacity:1;transform:translate(var(--align),-50%) scale(1)}100%{opacity:0;transform:translate(var(--align),-52%) scale(1)}}
+@keyframes warm24{0%{opacity:0;transform:translateX(-30%)}30%,68%{opacity:.9}100%{opacity:0;transform:translateX(30%)}}
+@media(max-width:760px){#cinema .blade{height:12px}#cinema .fx-vector path{stroke-width:1.7}#cinema .edge-trace{border-width:1.5px}}
+.opening-beat .appear .kinetic.reject strong{animation-delay:.12s}.opening-beat .appear .kinetic.reject .stamp{animation-delay:.24s}
+/* Ver.25 — restrained book design and final certificate typography */
+.cover.literary-cover{background:#223438;box-shadow:2px 3px 0 #b8b1a1,4px 5px 0 #dbd5c8,0 16px 42px #292d2933}
+.cover.literary-cover .jacket{padding:10% 12% 8% 14%;gap:4%}
+.literary-cover .jacket-sub{gap:clamp(8px,3cqw,17px);padding-bottom:8%}
+.literary-cover .jacket-author{font-size:clamp(12px,3.5cqw,18px);letter-spacing:.14em;margin-top:clamp(6px,3cqw,16px);color:#e2ded0;white-space:nowrap}
+.literary-cover .jacket-date{font-variant-numeric:tabular-nums;letter-spacing:.08em}
+.school-certificate .certificate-layout{padding:15% 13% 12%;gap:3%;}
+.school-certificate .certificate-content{justify-content:center;flex:1;min-height:0}
+.cover.school-certificate h1{margin:0 0 12%;letter-spacing:.24em;padding-left:.24em}
+.school-certificate .certificate-recipient{border-bottom:1px solid #a88b51;padding-bottom:3%;letter-spacing:.10em}
+.school-certificate .certificate-message{margin:9% 0 0;line-height:2.1;letter-spacing:.025em;font-size:clamp(11px,3.5cqw,17px)}
+.school-certificate .certificate-signature{gap:clamp(5px,1.8cqw,10px)}
+.school-certificate .closing-respect{font-size:clamp(11px,3.3cqw,16px);margin-bottom:3%}
+.school-certificate .certificate-date{font-size:clamp(10px,3.1cqw,15px);letter-spacing:.12em}
+.school-certificate .author-name{font-size:clamp(17px,5.7cqw,30px);letter-spacing:.17em;line-height:1.25}
+.school-certificate .signature-line{gap:clamp(8px,3cqw,15px)}
+.school-certificate .seal{width:clamp(28px,9.8cqw,49px);aspect-ratio:1;height:auto;padding:3px;line-height:1.1;font-size:clamp(10px,3.5cqw,17px);border:3px double #a2252b;letter-spacing:.03em}
+@media(max-width:760px){.cover.literary-cover .jacket{padding:10% 11% 8% 13%}.school-certificate .certificate-layout{padding:14% 12% 12%}}
+
+/* Ver.26 — quiet reader controls */
+.reader-header{padding:8px clamp(16px,4vw,55px);min-height:51px;letter-spacing:.09em;gap:8px;align-items:center}
+.reader-brand{display:flex;align-items:baseline;gap:12px;white-space:nowrap}.reader-brand b{font-weight:600;font-size:15px;letter-spacing:.16em}.reader-brand span{font-size:11px;color:var(--muted)}
+.reader-tools{display:flex;gap:8px;align-items:center}.reader-tools button{min-height:44px;padding:8px 11px;display:flex;align-items:center;gap:7px;border:0;border-bottom:1px solid transparent;border-radius:0;background:transparent;font-size:12px;letter-spacing:.06em}.reader-tools button:hover{background:#fcfaf580;border-bottom-color:#a88b51}.reader-tools svg{width:16px;height:16px;stroke:currentColor;fill:none;stroke-width:1.4}.reader-tools .motion-status{font-size:10px;color:var(--muted);border:1px solid #9b9181;padding:2px 5px;letter-spacing:.02em}.reader-tools #motion[aria-pressed=true] .motion-status{color:#223438;border-color:#60736e}
+.side-nav{border:0;border-radius:0;background:transparent;box-shadow:none;width:46px;height:68px;color:#554c40}.side-nav svg{width:23px;height:23px;stroke-width:1.25}.side-nav:hover:not(:disabled){background:#fcfaf580;scale:1}.side-nav:disabled{opacity:.22}
+.controls{display:grid;grid-template-columns:minmax(90px,1fr) minmax(100px,230px) minmax(90px,1fr);align-items:center;gap:clamp(8px,2vw,32px);width:min(720px,100%);margin-inline:auto;padding:5px 16px 4px;flex:none}.controls button{min-width:0;width:max-content;min-height:44px;padding:8px 14px;border:0;background:transparent;border-radius:0;font-size:13px;letter-spacing:.06em;white-space:nowrap}.controls #prev{justify-self:end}.controls #next{justify-self:start}.controls #next:not(:disabled){background:#223438;color:#fcfaf5;border:0}.controls #next:hover:not(:disabled){background:#354b4d}.controls #prev:hover:not(:disabled){background:#fcfaf580}.controls button:disabled{opacity:.35}.read-meter{display:grid;gap:7px;align-content:center;min-width:0}.position{min-width:0;font-size:12px;line-height:1.3;letter-spacing:.1em;white-space:nowrap}.progress{display:block;width:100%;height:2px;background:#c2b9aa}.progress i{background:#223438;transition:transform .35s ease}.hint{font-size:10px;letter-spacing:.04em;margin:0 0 9px;min-height:13px}.controls [hidden]{display:none!important}
+#toc-dialog{font-family:var(--serif);width:min(460px,calc(100% - 30px));max-height:calc(100svh - 30px);background:#fcfaf5;color:#211e1a;border:1px solid #aa9e8a;padding:24px 28px;box-shadow:0 18px 50px #211e1a33;overflow:auto;z-index:100}#toc-dialog::backdrop{background:#22343888}#toc-dialog .toc-head{display:flex;justify-content:space-between;align-items:center;border-bottom:1px solid #c9c0b0;padding-bottom:10px;margin-bottom:10px}#toc-dialog h2{font-size:21px;font-weight:500;letter-spacing:.18em;margin:0}#toc-dialog #close-toc{border:0;background:transparent;padding:6px;min-width:44px;min-height:44px;color:#554c40}#toc-list{display:grid;gap:0}#toc-list button{display:flex;align-items:center;justify-content:space-between;gap:10px;border:0;border-bottom:1px solid #e1dbd0;background:transparent;text-align:left;width:100%;min-height:44px;padding:10px 7px;font-size:14px;line-height:1.5}#toc-list button:last-child{border-bottom:0}#toc-list button:hover{background:#eee9dd}#toc-list button[aria-current=true]{border-left:2px solid #a2252b;padding-left:12px;color:#223438;font-weight:600;background:#f1ece2}#toc-list .toc-folio{font-size:11px;color:#554c40;white-space:nowrap;font-variant-numeric:tabular-nums;font-weight:400}#toc-dialog button:focus-visible{outline:2px solid #a2252b;outline-offset:1px}
+@media(max-width:760px){.reader-header{padding:4px 12px;min-height:48px}.reader-brand{gap:5px}.reader-brand b{font-size:13px}.reader-brand span{display:none}.reader-tools{gap:0}.reader-tools button{padding:8px;font-size:11px}.reader-tools .motion-status{font-size:9px}.controls{padding:5px 10px 4px;grid-template-columns:1fr minmax(68px,1fr) 1fr;gap:7px}.controls button{font-size:12px;padding:8px 10px}.controls #prev{justify-self:end}.controls #next{justify-self:start}.hint{font-size:10px;margin:0 0 6px}.position{font-size:11px}.read-meter{gap:5px}#toc-dialog{padding:16px 19px}#toc-list button{font-size:13px}}
+@media(max-width:350px){.reader-tools button{gap:3px;padding-inline:5px}.reader-brand b{font-size:12px}.reader-tools svg{display:none}.controls button{padding-inline:7px}.hint{letter-spacing:0}}
+
+
+/* Ver.27 — opening without a waiting interval */
+#opening-ceremony .ceremony-wash{animation-duration:.48s}
+#opening-ceremony .ceremony-ring{animation-duration:.40s;animation-delay:0s;border-radius:0;box-shadow:none}
+#opening-ceremony .ceremony-ray{animation-duration:.40s;animation-delay:0s}
+#opening-ceremony .ceremony-spark{animation-duration:.43s;animation-delay:0s;box-shadow:none}
+#opening-ceremony .ceremony-edge{animation-duration:.48s}
+.opening-beat .leaf:not(.face) .page-body>p{opacity:1;transform:none;animation:none}
+.cover-flip{will-change:transform,opacity;animation-duration:.42s}
+.cover-flip.backwards{animation-duration:.48s}
+
+/* Ver.28 — stable typography: clip a flat sheet, not the glyphs. */
+.book .flap{transform-style:flat;perspective:none;overflow:hidden;will-change:clip-path;}
+.book .flap.next{animation:flatTurnNext .49s cubic-bezier(.35,.02,.25,1) both;transform:none;}
+.book .flap.prev{animation:flatTurnPrev .49s cubic-bezier(.35,.02,.25,1) both;transform:none;}
+.book.single .flap.next{animation:flatTurnNext .38s cubic-bezier(.35,.02,.25,1) both;}
+.book.single .flap.prev{animation:flatTurnPrev .38s cubic-bezier(.35,.02,.25,1) both;}
+.book .flap .face.front{transform:none;backface-visibility:visible;box-shadow:none;}
+.book .flap .face.back{display:none;}
+.book .flap .face.front:after{display:none;}
+.book .flap:after{content:"";position:absolute;top:0;bottom:0;width:clamp(12px,3vw,38px);pointer-events:none;background:linear-gradient(90deg,transparent,#b5a68b50,#fdfbf6 75%,#a4947838);}
+.book .flap.next:after{right:0;animation:foldNext .49s cubic-bezier(.35,.02,.25,1) both;}
+.book .flap.prev:after{left:0;animation:foldPrev .49s cubic-bezier(.35,.02,.25,1) both;}
+.book.single .flap:after{animation-duration:.38s;}
+.book .underlay.left{animation:flatTurnPrev .49s cubic-bezier(.35,.02,.25,1) both;}
+.book .underlay.right{animation:flatTurnNext .49s cubic-bezier(.35,.02,.25,1) both;}
+@keyframes flatTurnNext{from{clip-path:inset(0 0 0 0)}to{clip-path:inset(0 100% 0 0)}}
+@keyframes flatTurnPrev{from{clip-path:inset(0 0 0 0)}to{clip-path:inset(0 0 0 100%)}}
+@keyframes foldNext{from{right:0}to{right:100%}}
+@keyframes foldPrev{from{left:0}to{left:100%}}
+.book .cover.cover-flip{animation:flatTurnNext .42s cubic-bezier(.35,.02,.25,1) both;transform:none;will-change:clip-path;flex:none;}
+.book .cover.cover-flip.backwards{animation:flatTurnPrev .48s cubic-bezier(.35,.02,.25,1) both;}
+.cover.enter,.cover.enter h1,.cover.enter .recipient,.cover.enter .sig,.cover.enter .jacket-title,.cover.enter .jacket-sub,.cover.enter .jacket-author{transform:none;filter:none;animation:stableCover28 .55s ease-out both;}
+@keyframes stableCover28{from{opacity:.75}to{opacity:1}}
+/* Keep the Japanese glyphs still; retain the underline, stamp and surrounding effects. */
+.page-body,.running,.folio{font-kerning:normal;line-break:strict;word-break:normal;}
+.page-body{overflow-wrap:break-word;}
+.page-body .kinetic .paper-word,.page-body .kinetic .word-reveal,.page-body .kinetic .interview-quote{max-width:100%;}
+.appear .kinetic.reject strong,.appear .kinetic.challenge .word-reveal,.appear .kinetic.mentor .paper-word,.appear .kinetic.memory .paper-word,.appear .special-body>p,.appear .special-body .thanks,.appear .kinetic.interview .interview-quote,.appear .kinetic.together p,.appear .question{animation:stableInk28 .45s ease-out both;transform:none;filter:none;}
+@keyframes stableInk28{from{opacity:.76}to{opacity:1}}
+.kinetic.challenge .word-reveal{white-space:nowrap;}
+@media(max-width:390px){.page-body{padding-inline-end:4px;overflow-wrap:anywhere}.page-body .lead{letter-spacing:.01em}}
+@media(max-width:350px){.kinetic.challenge .paper-word{font-size:23px}.kinetic.mentor .paper-word{font-size:26px}.stamp-block{gap:7px}.kinetic.reject strong{font-size:23px}}
+
+
+/* Ver.29 — separate animated overlays from the page layout. */
+.stage{min-width:0;grid-template-columns:minmax(0,1fr)}
+.book{min-width:0;max-width:100%}
+.book.spread>.leaf:not(.underlay):not(.probe){flex:0 0 50%;width:50%;min-width:0}
+.book.single:not(.cover-mode)>.leaf:not(.underlay):not(.probe){flex:0 0 100%;width:100%;min-width:0}
+.book>.cover.cover-flip{position:absolute;inset:0;margin:auto;max-width:100%;flex:none;pointer-events:none;z-index:8}
+.book>.underlay,.book>.flap{position:absolute;flex:none;pointer-events:none}
+.book>.underlay.left{left:0;right:auto;width:50%}
+.book>.underlay.right{right:0;left:auto;width:50%}
+.book .flap>.face{position:absolute;inset:0;width:100%;height:100%;margin:0}
+
+/* Ver.30 — real two-sided page turn, independent of the reading layout. */
+.book{perspective:2000px;perspective-origin:50% 50%;}
+.book>.leaf:not(.underlay):not(.probe){flex-shrink:0;}
+.book>.flap{position:absolute;top:0;bottom:0;overflow:visible;transform-style:preserve-3d;perspective:none;clip-path:none;will-change:transform;z-index:7;}
+.book>.flap.next{left:50%;right:auto;transform-origin:left center;animation:turnPaperNext30 .52s cubic-bezier(.42,.04,.25,1) both;}
+.book>.flap.prev{right:50%;left:auto;transform-origin:right center;animation:turnPaperPrev30 .52s cubic-bezier(.42,.04,.25,1) both;}
+.book>.flap>.face{position:absolute;inset:0;width:100%;height:100%;flex:none;overflow:hidden;backface-visibility:hidden;-webkit-backface-visibility:hidden;}
+.book .flap .face.front{display:flex;transform:rotateY(0deg);backface-visibility:hidden;box-shadow:0 2px 12px #342d2420;}
+.book .flap .face.back{display:flex;transform:rotateY(180deg);backface-visibility:hidden;box-shadow:0 2px 12px #342d2420;}
+.book .flap:after{display:none;animation:none;}
+.book .flap .face.front:after,.book .flap .face.back:after{display:block;content:"";position:absolute;inset:0;pointer-events:none;background:linear-gradient(90deg,#6b58451a,transparent 16%,transparent 82%,#6b58451a);}
+.book>.underlay.left,.book>.underlay.right{animation:none;clip-path:none;z-index:4;}
+.book.single>.flap.next,.book.single>.flap.prev{left:0;right:0;width:100%;}
+.book.single>.flap.next{transform-origin:left center;animation:singlePaperNext30 .42s ease-in-out both;}
+.book.single>.flap.prev{transform-origin:right center;animation:singlePaperPrev30 .42s ease-in-out both;}
+.book.single .flap .face.back{display:none;}
+.book>.cover.cover-flip{position:absolute;inset:0;margin:auto;flex:none;transform-origin:left center;clip-path:none;backface-visibility:hidden;animation:coverPaperNext30 .42s ease-in-out both;will-change:transform;}
+.book>.cover.cover-flip.backwards{transform-origin:right center;animation:coverPaperPrev30 .48s ease-in-out both;}
+@keyframes turnPaperNext30{from{transform:rotateY(0deg)}to{transform:rotateY(-180deg)}}
+@keyframes turnPaperPrev30{from{transform:rotateY(0deg)}to{transform:rotateY(180deg)}}
+@keyframes singlePaperNext30{0%{transform:rotateY(0deg);opacity:1}85%{opacity:1}100%{transform:rotateY(-90deg);opacity:0}}
+@keyframes singlePaperPrev30{0%{transform:rotateY(0deg);opacity:1}85%{opacity:1}100%{transform:rotateY(90deg);opacity:0}}
+@keyframes coverPaperNext30{0%{transform:rotateY(0deg);opacity:1}85%{opacity:1}100%{transform:rotateY(-90deg);opacity:0}}
+@keyframes coverPaperPrev30{0%{transform:rotateY(0deg);opacity:1}85%{opacity:1}100%{transform:rotateY(90deg);opacity:0}}
+
+/* Ver.35: editorial line setting, preserving the original page grid. */
+.page-body p.set-lines{ text-indent:0; }
+.page-body .set-line{display:block;white-space:nowrap;text-indent:0;letter-spacing:inherit;line-height:inherit;}
+.page-body .set-lines:not(.set-center) .set-line:not(:last-child){text-align:left;text-align-last:left;}
+.page-body .set-lines:not(.set-center) .set-line:last-child{text-align:left;text-align-last:left;}
+.page-body .set-center .set-line{text-align:center;text-align-last:center;}
+.page-body .set-lines .set-line:first-child{padding-left:var(--first-indent,0px);}
+.page-body p.aside.set-lines{text-align:left;}
+</style></head><body><header class="reader-header"><div class="reader-brand"><b>修了証書</b><span>あとがき</span></div><div class="reader-tools"><button id="toc-open" type="button" aria-haspopup="dialog" aria-controls="toc-dialog"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 6h14M5 12h14M5 18h14"/></svg>目次</button><button id="motion" type="button" aria-pressed="true">演出 <span class="motion-status">ON</span></button></div></header><main class="stage"><button class="side-nav side-prev" id="sidePrev" aria-label="前の頁"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M15 5l-7 7 7 7"/></svg></button><div id="book" class="book" aria-label="修了証書"></div><button class="side-nav side-next" id="sideNext" aria-label="次の頁"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 5l7 7-7 7"/></svg></button></main><nav class="controls" aria-label="ページ操作"><button id="prev" type="button">‹ 前の頁</button><div class="read-meter"><div class="position" id="pos" aria-live="polite"></div><div class="progress" aria-hidden="true"><i id="bar"></i></div></div><button id="next" type="button">次の頁 ›</button><select id="jump" aria-label="章へ移動" hidden></select></nav><dialog id="toc-dialog" aria-labelledby="toc-title"><div class="toc-head"><h2 id="toc-title">目次</h2><button id="close-toc" type="button" aria-label="目次を閉じる">閉じる</button></div><div id="toc-list"></div></dialog><p class="hint" id="hint">左右の矢印キーでも頁をめくれます。</p><div id="cinema" aria-hidden="true"></div><div id="opening-ceremony" aria-hidden="true"></div><script>
+const chapters=[{"heading":"01　まえがき","blocks":["<p class=\"\">20日に行われた飲み会の帰り道。</p>","<p class=\"\">私はすっかりエモエモな感情に駆られまして、何か私なりに、形に残るものをみなさんにお送りできないかと考えていました。</p>","<p class=\"\">そして、帰りの電車の中、酔っ払いながら制作した結果、見事なまでの</p>","<div class=\"stamp-block\"><strong>激キモポエム</strong><span class=\"stamp\">没</span></div>","<p class=\"\">が完成しました。</p>","<p class=\"lead\">もちろん、没です。</p>","<p class=\"\">しかし、修了式後に「なんで没にしちゃったの」という、ありがたいお言葉をいただきまして、こうして改めて作り直すことにしました。</p>","<p class=\"\">本編は、みなさんと過ごした日々ですので、今回は私なりのあとがきだけを残そうと思います。</p>","<p class=\"\">恥ずかしいですが、少しお付き合いください。</p>"],"keep":[[2,6],[7,9]]},{"heading":"02　始まり","blocks":["<p class=\"lead\">さて、入学当初は不安しかありませんでしたね。</p>","<p class=\"\">前職を辞め、自分の中では一度、社会から「お前は社不（社会不適合者）だ。」というレッテルを貼られたような気がして、悩みに悩んでいた時期でした。</p>","<p class=\"\">いっそ、消えてしまえば楽なのにと、何度も考えたこともありました。</p>","<p class=\"\">ありがたいことに、私は家族や周りの人たちに恵まれていたので、職業訓練に通うという選択（まだ生きる）ができました。</p>","<p class=\"\">とはいえ、不安も不安。</p>","<p class=\"\">私にできるの？<br/>クラスメートと馴染めるの？<br/>また、しんどいってならんかな？</p>","<p class=\"\">そんなことばかり考えていました。</p>","<p class=\"\">冒頭から重たいですね、すみません。</p>","<p class=\"\">こっから明るくなるはずなんで、少し耐えてくださいね。</p>"],"keep":[[4,7],[7,9]]},{"heading":"03　試行錯誤","blocks":["<p class=\"\">そんな感情や想いを抱えたまま、私の職業訓練生活がスタートしました。</p>","<p class=\"\">最初はイラレもフォトショも、</p>","<p class=\"question\">なんやこれ？</p>","<p class=\"question\">私、絵描けないよ？</p>","<p class=\"question\">みんなうまくね？</p>","<p class=\"question\">先生、ちょっと何言ってるんですか？</p>","<p class=\"question\">これってこう？　あってる？</p>","<p class=\"\">と、試行錯誤の連続でした。</p>","<p class=\"\">分からないことだらけでしたが、その分、毎日が発見の連続でもありました。</p>","<p class=\"\">今振り返っても、イラレとフォトショでは、みなさんには勝てないなと思いますね。</p>","<p class=\"aside\">（そもそも勝ち負けとかないけどね。）</p>","<p class=\"lead\">だって、みなさんセンス凄すぎましたもん。</p>","<p class=\"\">私が得意としていたのは、世界観や届けたいものの中身を構想すること。</p>","<p class=\"\">頭の中には作りたいものがあるのに、それを思い描いた通りに出力できない。そんな私からすると、みなさんの作品には驚かされることばかりでした。</p>","<p class=\"\">Web版ポートフォリオを作っているときなんかも、みなさんの過去の作品を見て、</p>","<p class=\"lead\">「こんなん作ってたの？　まじ？」</p>","<p class=\"\">ってなりましたもん。</p>"],"keep":[[1,8],[9,11],[14,17]]},{"heading":"04　無我夢中","blocks":["<p class=\"lead\">動画からは、勝ったなと思いましたね。</p>","<p class=\"aside\">（勝ち負けとかないって言ったばかりですけどね。）</p>","<p class=\"emphasis\">ぜってー負けねえ。</p>","<p class=\"\">そんなことを思いながら、学校でも作業し、家でも作業し、少しでもいいものを作ろうと必死でした。</p>","<p class=\"lead\">この時は、ほんっとうに努力しました。<br><span class=\"normal-weight\">今よりも寝てなかったですね（笑）。</span></p>","<p class=\"\">とはいえ、何もかもが手探りでした。</p>","<p class=\"\">ソフトの基本操作から、動画の素材探し、どう表現すればいいのか、そもそも受け手に何を伝えたいのか。</p>","<p class=\"lead\">作っては直し、また作っては直し。</p>","<p class=\"\">無我夢中でしたね。</p>","<p class=\"\">当時は楽しいかどうかを考える余裕すらなかったように思います。</p>","<p class=\"\">今になって振り返ると、</p>","<p class=\"emphasis\">随分と楽しい時間を過ごしていたんだなと思います。</p>","<p class=\"\">そして、その時に学んだことを活かして制作しているのが、こちらのキモポエムです。</p>","<p class=\"aside\">半年間の集大成がこれでいいのかという疑問は、一旦置いておきましょう。</p>"],"keep":[[0,3],[7,9],[10,12],[12,14]]},{"heading":"05　感謝","blocks":["<p class=\"\">さて、自分語りが長々となってしまいました。</p>","<p class=\"\">要は、こんな気持ちで学校に通っていました、ということを伝えたかっただけです。</p>","<p class=\"\">ここまで読んでくださったみなさん、ありがとうございます。</p>","<p class=\"lead\">こっからが本編といえば本編です。</p>","<p class=\"\">あとがきに本編があるのも、おかしな話ですけどね。</p>","<p class=\"aside\">（こっからもっとキモくなるので、あんまり読んでほしくないですけどね。）</p>"],"keep":[[3,6]]},{"heading":"06　越智先生、竹川先生へ","blocks":["<h2>越智先生、竹川先生へ</h2>","<p class=\"\">何度も何度もお伝えしておりますが、本当に半年間ありがとうございました。</p>","<p class=\"\">お二方がクラスの雰囲気を作り、時には緩く、時には厳しく、絶妙な塩梅で接してくださったおかげで、私も余計なストレスを感じることなく学べました。</p>","<p class=\"\">私にとってお二人は、先生であり、話し相手でもありました。</p>","<p class=\"\">頭の中にある漠然としたアイデアや感性を、言葉にするところからお付き合いいただきましたね。自分でも何を言っているのか分からなくなるような話を、随分と聞いていただいた気がします。</p>","<p class=\"parallel\">越智先生は、課題という形で。<br>竹川先生は、寄り添うという形で。</p>","<p class=\"\">お二人それぞれの感性で、私の考えを肯定し、より良いものへと導いてくださいました。</p>","<p class=\"lead\">自分の持っているものは、間違っていないんだなと。</p>","<p class=\"\">そう思えたことが、アイデアを形にする原動力になっていました。</p>","<p class=\"\">もちろん、良いところだけでなく、悪いところもきちんと評価してくださったことにも感謝しています。</p>","<p class=\"\">何より、こんな私の努力をちゃんと見てくださっていたことが、本当に嬉しかったです。</p>","<p class=\"\">アイデアを考えることは、昔から好きでした。</p>","<p class=\"\">ですが、それを形にして、誰かに見てもらうことがこんなにも楽しいとは知りませんでした。</p>","<p class=\"\">お二人には、随分と作る楽しさを教えていただきましたね。</p>","<p class=\"\">さて、こんなことを言うのも恥ずかしいのですが。</p>","<p class=\"\">これから、もっともっとすごいものを作り続けますので、いつか、どこかで私の作ったものを手に取っていただけたら嬉しいです。</p>","<p class=\"\">その時に、</p>","<div class=\"kinetic mentor\"><p class=\"paper-word\">「やるじゃん。」</p></div>","<p class=\"\">って思っていただけたら、最高ですね。</p>","<p class=\"\">本当に、お二人が先生でよかったです。</p>","<p class=\"\">ありがとうございました。</p>"],"keep":[[0,2],[5,7],[7,9],[11,13],[16,19],[19,21]]},{"heading":"07　一緒に学んだみなさんへ","blocks":["<h2>一緒に学んだみなさんへ</h2>","<p class=\"\">いろんな事情があって、いろんな環境を経験してきた人たちが、同じ場所で、同じ時間と経験を共有し、それぞれに成長していく。</p>","<p class=\"\">私にとってみなさんは、互いに高め合える仲間でした。</p>","<p class=\"\">みなさんの尊敬するところを挙げだしたら、きりがありません。</p>","<p class=\"\">というより、私だけではなく、みなさんが互いにリスペクトを持って接していたからこそ、こんなにいいクラスになったんだと思います。</p>","<p class=\"\">個人的には、みなさんの前では常に最強の私でいたかったですね。</p>","<p class=\"\">みなさんが思う私を、次の作品では超えたろ、なんて思いながら制作していました。</p>","<p class=\"\">随分と自分で自分のハードルを上げていましたね（笑）。</p>","<p class=\"\">作品を見ていただくたびに、</p>","<p class=\"lead\">「まだいけるやろ、俺。」</p>","<p class=\"\">という自信にもなりましたし、</p>","<p class=\"lead\">「あ、この見せ方だと伝わらんねや。」</p>","<p class=\"\">という、自分の表現を見直す基準にもなりました。</p>","<p class=\"\">みなさんがいてくださったからこそ、あれだけ制作に打ち込めたのだと思います。</p>","<div class=\"kinetic together\"><p>そして、何より。</p><p>ひとりじゃないんだなと、ずっとずっと実感できた半年間でした。</p></div>","<p class=\"\">うまくいっているように見える人も、話してみると、意外とそんなことはなくて。</p>","<p class=\"\">ああ、その悩み分かるな、なんて思うこともたくさんありました。</p>","<p class=\"\">授業中も、休憩時間も、飲み会も、くだらない話をしていた時間も。</p>","<p class=\"lead\">今となっては、どれも宝物です。</p>","<p class=\"\">まだ何も成し遂げていない私が言うのもなんですが、いつかインタビューを受けるようなことがあれば、</p>","<div class=\"kinetic interview\"><p class=\"interview-quote\">「あの半年間がなければ、今の私はいませんね。」</p></div>","<p class=\"\">なんて、格好つけて答えたいくらいには、私にとって大切な時間です。</p>","<p class=\"\">まあ、今のところインタビューされる予定なんて一切ないんですけどね。</p>","<p class=\"\">みなさんと同じクラスで、本当によかったです。</p>","<p class=\"\">半年間、本当にありがとうございました。</p>"],"keep":[[0,3],[8,11],[11,13],[17,19],[19,23],[23,25]]},{"heading":"08　結び","blocks":["<p class=\"\">さて、そろそろ、あとがきも終わりにしようと思います。</p>","<p class=\"\">修了したという実感は、正直まだありません。</p>","<p class=\"\">楽しかったという感想も、今になってようやく出てきたくらいですから、寂しさも少し遅れてやってくるのでしょうね。</p>","<p class=\"\">私のエモエモな感情から生まれた、この修了証書ですが。</p>","<p class=\"\">いつか何かの拍子にこれを見返して、</p>","<p class=\"\">「ああ、そんな時間もあったな。」</p>","<p class=\"\">なんて思い出していただけたら嬉しいです。</p>","<p class=\"\">その時に、また頑張ろうかなとか、ひとりじゃないんだなとか、少しでも思っていただけたら、作った甲斐があったというものです。</p>","<p class=\"lead\">どうやら、没にしなくてよかったみたいですね。</p>","<p class=\"\">こんなに長い文章になってしまいましたが、結局のところ、伝えたかったことは一つだけです。</p>","<p class=\"\">最後くらいは、茶化さずに。</p>"],"keep":[[4,7],[9,11]]}];
+const book=document.querySelector('#book'),prev=document.querySelector('#prev'),next=document.querySelector('#next'),pos=document.querySelector('#pos'),bar=document.querySelector('#bar'),jump=document.querySelector('#jump'),motion=document.querySelector('#motion'),sidePrev=document.querySelector('#sidePrev'),sideNext=document.querySelector('#sideNext');
+let preparedFirst=null;
+let pages=[],current=-1,desktop=false,busy=false,enabled=!matchMedia('(prefers-reduced-motion: reduce)').matches,serial=0,cleanup=null,ignoreClickUntil=0;
+
+const cinema=document.querySelector('#cinema');let cinemaTimer=0,cinemaEnd=0;
+const ceremony=document.getElementById('opening-ceremony');let ceremonyTimer=0;
+function stopCeremony(){clearTimeout(ceremonyTimer);ceremony.className='';ceremony.replaceChildren()}
+function openCeremony(rect){if(!enabled||!rect)return;stopCeremony();ceremony.style.setProperty('--ring-w',rect.width+'px');ceremony.style.setProperty('--ring-h',rect.height+'px');const rays=Array.from({length:4},(_,i)=>`<i class="ceremony-ray" style="--angle:${i*90}deg;--delay:${i%4*.035}s"></i>`).join('');const sparks=Array.from({length:8},(_,i)=>{const side=i%4;let x,y;if(side<2){x=side===0?Math.max(8,rect.left*(.2+(i*17%65)/100)):Math.min(innerWidth-8,rect.right+(innerWidth-rect.right)*(.2+(i*17%65)/100));y=innerHeight*(.08+(i*31%84)/100)}else{x=innerWidth*(.04+(i*23%92)/100);y=side===2?Math.max(8,rect.top*.5):Math.min(innerHeight-8,rect.bottom+(innerHeight-rect.bottom)*.5)}return `<i class="ceremony-spark" style="--x:${x}px;--y:${y}px;--dx:${(innerWidth/2-x)*.35}px;--dy:${(innerHeight/2-y)*.35}px;--size:${3+i%4}px;--delay:${i%6*.045}s"></i>`}).join('');ceremony.innerHTML='<div class="ceremony-wash"></div><i class="ceremony-ring" style="--delay:0s"></i><i class="ceremony-ring" style="--delay:.16s"></i>'+rays+sparks+'<div class="ceremony-edge"></div>';ceremony.className='active';ceremonyTimer=setTimeout(stopCeremony,490)}
+function clearCinema(){clearTimeout(cinemaTimer);clearTimeout(cinemaEnd);cinema.className='';cinema.replaceChildren()}
+function sceneNow(){if(current<0)return '';if(current>=pages.length)return 'seal';if(book.querySelector('.leaf:not(.face):not(.underlay) .special-body'))return 'ending';if(book.querySelector('.leaf:not(.face):not(.underlay) .kinetic.challenge'))return 'challenge';if(book.querySelector('.leaf:not(.face):not(.underlay) .kinetic.reject'))return 'reject';if(book.querySelector('.leaf:not(.face):not(.underlay) .kinetic.memory'))return 'memory';for(const k of ['interview','mentor','together'])if(book.querySelector('.leaf:not(.face):not(.underlay) .kinetic.'+k))return k;if(book.querySelector('.leaf:not(.face):not(.underlay) .resolve-line'))return 'resolve';if(book.querySelector('.leaf:not(.face):not(.underlay) .question'))return 'questions';return ''}
+
+function vectorScene(kind,r){
+ const W=innerWidth,H=innerHeight,L=r.left,R=r.right,T=r.top,B=r.bottom,C=(L+R)/2,M=(T+B)/2;
+ const q=Math.min(15,Math.max(4,L*.35)),t=Math.max(3,T-q),b=Math.min(H-3,B+q),l=Math.max(3,L-q),rr=Math.min(W-3,R+q);
+ const path=(d,cls='',delay=0)=>`<path pathLength="1" d="${d}" class="${cls}" style="--d:${delay}s"/>`;
+ let out='';
+ if(kind==='reject'){
+   out+=path(`M${l} ${T+24} V${t} H${rr} V${T+24} M${rr} ${B-24} V${b} H${l} V${B-24}`);
+ }else if(kind==='challenge'){
+   for(let i=0;i<3;i++){let y=T+(B-T)*(.25+i*.25);out+=path(`M0 ${y+32} L${l} ${y} M${rr} ${y} L${W} ${y-32}`,i===1?'':'fine',i*.06)}
+ }else if(kind==='questions'){
+   for(let i=0;i<3;i++){let y=T+(B-T)*(.25+i*.25);out+=path(`M${Math.max(2,l-18)} ${y} H${l} M${rr} ${y} H${Math.min(W-2,rr+18)}`,'fine',i*.11)}
+ }else if(kind==='mentor'){
+   out+=path(`M0 ${M} H${l} M${rr} ${M} H${W}`,'',0);
+ }else if(kind==='resolve'){
+   out+=path(`M${l} ${b} H${C-8} l8 -8 l8 8 H${rr}`,'',.1);
+ }else if(kind==='together'){
+   out+=path(`M0 ${M} H${l} V${b} H${C} M${W} ${M} H${rr} V${b} H${C}`,'gold',.05);
+ }
+ return `<svg class="fx-vector" viewBox="0 0 ${W} ${H}" preserveAspectRatio="none" aria-hidden="true">${out}</svg>`;
+}
+const sceneDurations={reject:1900,challenge:2350,questions:1900,mentor:2350,interview:2400,together:3200,memory:3200,ending:3400,seal:2200,resolve:2400};
+function playCinema(kind){if(!enabled||!kind)return;const rect=(book.querySelector('.cover:not(.cover-flip)')||book).getBoundingClientRect();const side=Math.max(0,rect.left),right=Math.max(0,innerWidth-rect.right);for(const [key,val] of Object.entries({'paper-x':rect.left,'paper-y':rect.top,'paper-w':rect.width,'paper-h':rect.height,'side-space':side,'right-space':right}))cinema.style.setProperty('--'+key,val+'px');const motes=Array.from({length:kind==='ending'?16:8},(_,i)=>{const left=i%2===0;const margin=left?side:right;const x=left?margin*(.2+((i*17)%60)/100):innerWidth-margin*(.2+((i*17)%60)/100);return `<i class="mote" style="--x:${x}px;--y:${(i*37+12)%100}%;--size:${3+i%3}px;--delay:${i%5*.055}s"></i>`}).join('');const scenes={mentor:'<div class="margin-type b">やるじゃん。</div>',together:'<div class="ribbon"></div>'+motes,interview:'<div class="interview-frame"></div><div class="quote-mark a">“</div><div class="quote-mark b">”</div>',challenge:'<div class="blade"></div><div class="margin-type a">ぜってー</div><div class="margin-type b">負けねえ。</div>',reject:'<div class="ring"></div><div class="margin-type b">没</div>',questions:'<div class="margin-type a">？</div><div class="margin-type b">？</div>',memory:'<div class="ribbon"></div>',ending:'<div class="ribbon"></div>'+motes,seal:'<div class="edge-trace"></div>'};cinema.innerHTML=(scenes[kind]||'')+vectorScene(kind,rect);cinema.className=kind+' active';cinemaEnd=setTimeout(clearCinema,sceneDurations[kind]||2300)}
+function queueCinema(delay=0){clearCinema();const kind=sceneNow();if(enabled&&kind)cinemaTimer=setTimeout(()=>{if(sceneNow()===kind)playCinema(kind)},delay)}
+
+function kinetic(content,kind=''){return `<div class="kinetic ${kind}">${content}</div>`}
+// Preserve the exact original wording; animate only selected typography.
+for(const ch of chapters){ch.blocks=ch.blocks.map(b=>b.includes('class="stamp-block"')?kinetic(b,'reject'):b.includes('ぜってー負けねえ。')?kinetic('<p class="paper-word"><span class="word-reveal" style="--j:0">ぜってー</span><span class="word-reveal" style="--j:1">負けねえ。</span></p>','challenge'):b.includes('どうやら、没にしなくてよかったみたいですね。')?b.replace('class="lead"','class="lead resolve-line"'):b.includes('随分と楽しい時間を過ごしていたんだなと思います。')?kinetic('<p class="paper-word">随分と楽しい時間を過ごしていたんだなと思います。</p>','memory'):b)}
+const coverHTML=last=>last?`<div class="cover school-certificate cert-final"><svg class="certificate-border" viewBox="0 0 210 297" preserveAspectRatio="none" aria-hidden="true"><rect x="8" y="8" width="194" height="281" fill="none" stroke="#a88b51" stroke-width="1.05"/><rect x="11" y="11" width="188" height="275" fill="none" stroke="#c6b382" stroke-width=".45"/><g transform="translate(14 14)" fill="none" stroke="#a88b51" stroke-width=".65"><path d="M0 26V0H26 M3 19V3H19 M0 21Q8 7 23 0 M3 27Q13 13 27 3"/><path d="M5 16Q1 9 9 8Q10 14 5 16ZM9 10Q9 3 16 3Q16 9 9 10ZM15 6Q18 0 23 3Q21 7 15 6Z" fill="#b79a60" stroke="none"/></g><g transform="translate(196 14) scale(-1 1)" fill="none" stroke="#a88b51" stroke-width=".65"><path d="M0 26V0H26 M3 19V3H19 M0 21Q8 7 23 0 M3 27Q13 13 27 3"/><path d="M5 16Q1 9 9 8Q10 14 5 16ZM9 10Q9 3 16 3Q16 9 9 10ZM15 6Q18 0 23 3Q21 7 15 6Z" fill="#b79a60" stroke="none"/></g><g transform="translate(14 283) scale(1 -1)" fill="none" stroke="#a88b51" stroke-width=".65"><path d="M0 26V0H26 M3 19V3H19 M0 21Q8 7 23 0 M3 27Q13 13 27 3"/><path d="M5 16Q1 9 9 8Q10 14 5 16ZM9 10Q9 3 16 3Q16 9 9 10ZM15 6Q18 0 23 3Q21 7 15 6Z" fill="#b79a60" stroke="none"/></g><g transform="translate(196 283) scale(-1 -1)" fill="none" stroke="#a88b51" stroke-width=".65"><path d="M0 26V0H26 M3 19V3H19 M0 21Q8 7 23 0 M3 27Q13 13 27 3"/><path d="M5 16Q1 9 9 8Q10 14 5 16ZM9 10Q9 3 16 3Q16 9 9 10ZM15 6Q18 0 23 3Q21 7 15 6Z" fill="#b79a60" stroke="none"/></g></svg><div class="certificate-layout"><div class="certificate-content"><h1>修了証書</h1><div class="certificate-recipient">出会えたみなさんへ</div><p class="certificate-message">出会えてよかったです。<br>半年間、本当にありがとうございました。</p></div><div class="certificate-signature"><span class="closing-respect">敬具</span><div class="certificate-date">令和八年十一月</div><div class="signature-line"><span class="author-name">三星元汰</span><span class="seal" aria-label="三星之印">三星<br>之印</span></div></div></div></div>`:`<div class="cover literary-cover clickable"><div class="jacket"><div class="jacket-date"><span>あとがき</span><span>二〇二六年十一月</span></div><h1>修了証書</h1><div class="jacket-sub"><span class="jacket-mark"></span><div class="recipient">拝啓<br>出会えたみなさんへ</div><div class="jacket-author">三星元汰</div></div><div class="open-note">頁をひらく</div></div></div>`;
+function leaf(page,index,side='',corner=true){const el=document.createElement('div');el.className='leaf '+side;const content=page? page.special?`<div class="special-body"><p>出会えてよかったです。</p>${kinetic('<p class="thanks">半年間、本当にありがとうございました。</p>','memory')}</div>`:(page.typesetHTML||page.blocks.join('')) : '';el.innerHTML=`<div class="running">${page?.heading||'　'}</div><div class="page-body">${content}</div><div class="folio">${page?String(index+1).padStart(2,'0'):'　'}</div>`;if(corner&&page){const b=document.createElement('button');b.className='pagecorner';b.setAttribute('aria-label',side==='left'&&desktop?'前の頁':'次の頁');b.onclick=e=>{e.stopPropagation();turn(side==='left'&&desktop?-1:1)};el.append(b)}return el}
+function stopTurn(){if(cleanup){const fn=cleanup;cleanup=null;fn()}busy=false}
+
+// Choose breaks inside the original paragraph's line budget.  No page or paragraph changes.
+const typeCanvas=document.createElement('canvas').getContext('2d');
+const jaWords=typeof Intl.Segmenter==='function'?new Intl.Segmenter('ja',{granularity:'word'}):null;
+function setParagraph(p){
+ if(p.children.length||p.matches('.question')||p.closest('.kinetic.challenge,.kinetic.reject'))return;
+ const str=p.textContent;if(!str||str.length<12)return;
+ const st=getComputedStyle(p),center=st.textAlign==='center'||p.matches('.paper-word,.interview-quote')||!!p.closest('.kinetic');
+ const lh=parseFloat(st.lineHeight),n=Math.round(p.getBoundingClientRect().height/lh);if(n<2||n>8)return;
+ const indent=center?0:Math.max(0,parseFloat(st.textIndent)||0),w=p.clientWidth-1;
+ typeCanvas.font=`${st.fontStyle} ${st.fontWeight} ${st.fontSize} ${st.fontFamily}`;
+ if('letterSpacing' in typeCanvas)typeCanvas.letterSpacing=st.letterSpacing==='normal'?'0px':st.letterSpacing;
+ const chars=Array.from(str),N=chars.length,fs=parseFloat(st.fontSize),boundaries=new Set([0,N]);
+ if(jaWords)for(const seg of jaWords.segment(str))boundaries.add(Array.from(str.slice(0,seg.index+seg.segment.length)).length);
+ const prohibitedStart=/^[、。，．！？：；）］｝」』】〉》〕ぁぃぅぇぉっゃゅょァィゥェォッャュョヮー々]/u;
+ const prohibitedEnd=/[（［｛「『【〈《〔]$/u;
+ const widths=Array.from({length:N},()=>[]);for(let i=0;i<N;i++)for(let j=i+1;j<=N;j++){const z=typeCanvas.measureText(chars.slice(i,j).join('')).width; widths[i][j]=z;if(z>w+fs*2)break;}
+ let best=null;const target=center?Math.min(w,typeCanvas.measureText(str).width/n):w;
+ const memo=new Map();
+ function solve(i,k){if(k===n)return i===N?{cost:0,lines:[]}:null;if(i>=N)return null;const key=i+':'+k;if(memo.has(key))return memo.get(key);let res=null;const cap=w-(k===0?indent:0);
+ for(let j=i+1;j<=N;j++){
+  const z=widths[i][j];if(z===undefined||z>cap)break;if((j===N)!==(k===n-1))continue;
+  const chunk=chars.slice(i,j).join('');if(prohibitedStart.test(chunk)||prohibitedEnd.test(chunk))continue;
+  const last=k===n-1;let cost;
+  if(center)cost=16*((z-target)/fs)**2;
+  else if(last)cost= Math.max(0,Math.min(8,cap/fs*.38)-z/fs)**2*15;
+  else cost=((cap-z)/fs)**2*2.8+Math.max(0,(cap-z)/fs-4)**2*10;
+  if(j<N){if(!boundaries.has(j))cost+=130; if(/^[ぁぃぅぇぉっゃゅょァィゥェォッャュョー]|^(?:し[、。]|て[、。]|た[、。]|です|でした|ます|ました|なかった|いただ|くださ|てい|てお|てくだ|ろう)/u.test(chars.slice(j).join('')))cost+=60;if(/[、。！？」』）]$/u.test(chunk))cost-=13;else if(/[はがをにでともへやの]$/u.test(chunk))cost-=5;if(/^[はがをにでともへやの]/u.test(chars.slice(j).join('')))cost+=2;}
+  const tail=solve(j,k+1);if(tail&&(!res||cost+tail.cost<res.cost))res={cost:cost+tail.cost,lines:[chunk,...tail.lines]};
+ }
+ memo.set(key,res);return res;}
+ best=solve(0,0);
+ const intentional=[
+ ['そんなことを思いながら、学校でも作業し、','家でも作業し、少しでもいいものを作ろうと','必死でした。'],
+ ['当時は楽しいかどうかを考える余裕すら','なかったように思います。'],
+ ['随分と楽しい時間を過ごして','いたんだなと思います。'],
+ ['そして、その時に学んだことを活かして','制作しているのが、こちらのキモポエムです。'],
+ ['半年間の集大成がこれでいいのかという疑問は、','一旦置いておきましょう。'],
+ ['ここまで読んでくださったみなさん、','ありがとうございます。'],
+ ['あとがきに本編があるのも、','おかしな話ですけどね。'],
+ ['（こっからもっとキモくなるので、','あんまり読んでほしくないですけどね。）'],
+ ['私にとってお二人は、先生であり、','話し相手でもありました。']
+ ];
+ const authored=intentional.find(lines=>lines.join('')===str&&lines.length===n&&lines.every((t,i)=>typeCanvas.measureText(t).width<=w-(i===0?indent:0)));
+ if(authored)best={lines:authored};if(!best)return;
+ const old=p.innerHTML,oldH=p.getBoundingClientRect().height;
+ p.classList.add('set-lines');if(center)p.classList.add('set-center');p.style.setProperty('--first-indent',indent+'px');
+ p.replaceChildren(...best.lines.map((t,i)=>{const e=document.createElement('span');e.className='set-line';e.textContent=t;if(!center&&i<best.lines.length-1){const gap=(w-(i===0?indent:0)-typeCanvas.measureText(t).width)/Math.max(1,Array.from(t).length-1);e.style.letterSpacing=(Math.max(0,parseFloat(st.letterSpacing)||0)+Math.min(.55,Math.max(0,gap)))+'px'}return e}));
+ if(p.getBoundingClientRect().height>oldH+1||[...p.children].some(e=>e.scrollWidth>e.clientWidth+1)){p.innerHTML=old;p.classList.remove('set-lines','set-center');p.style.removeProperty('--first-indent');}
+}
+
+function layout(){stopCeremony();clearCinema();const anchor=current>=0&&current<pages.length?pages[current]?.key:null;const wasEnd=current>=pages.length&&pages.length>0;stopTurn();serial++;desktop=innerWidth>760;book.className='book '+(desktop?'spread':'single');book.replaceChildren();const probe=leaf({heading:'計測',blocks:[]},0,'probe',false);book.append(probe);const body=probe.querySelector('.page-body');const result=[];for(let c=0;c<chapters.length;c++){
+ const ch=chapters[c],groups=[];let units=[];
+ for(let i=0;i<ch.blocks.length;){const keep=ch.keep.find(g=>g[0]===i);const end=keep?keep[1]:i+1;groups.push({start:i,blocks:ch.blocks.slice(i,end)});i=end}
+ const flatten=u=>u.flatMap(g=>g.blocks);const fits=u=>{body.innerHTML=flatten(u).join('');return body.scrollHeight<=body.clientHeight};
+ const push=()=>{if(units.length){result.push({heading:ch.heading,blocks:flatten(units),units:[...units],key:c+':'+units[0].start,chapter:c});units=[]}};
+ for(const g of groups){const parts=fits([g])?[g]:g.blocks.map((b,i)=>({start:g.start+i,blocks:[b]}));for(const part of parts){if(units.length&&!fits([...units,part]))push();units.push(part)}}push();
+ // Balance short last pages without separating a protected sequence.
+ const tail=result.at(-1),before=result.at(-2);
+ if(tail?.chapter===c&&before?.chapter===c&&tail.blocks.length<=2){while(tail.blocks.length<4&&before.units.length>1){const candidate=[before.units.at(-1),...tail.units];if(!fits(candidate))break;tail.units=candidate;before.units.pop();tail.blocks=flatten(tail.units);before.blocks=flatten(before.units);tail.key=c+':'+tail.units[0].start}}
+}
+for(const pg of result){body.innerHTML=pg.blocks.join('');for(const p of body.querySelectorAll('p'))setParagraph(p);if(body.scrollHeight<=body.clientHeight)pg.typesetHTML=body.innerHTML;}
+result.push({heading:'結び',special:true,key:'final',chapter:chapters.length});pages=result;probe.remove();preparedFirst=[leaf(pages[0],0,desktop?'left':'')];if(desktop)preparedFirst.push(leaf(pages[1],1,'right'));if(wasEnd)current=pages.length;else if(anchor){let found=pages.findIndex(p=>p.key===anchor);if(found<0){const [c,n]=anchor.split(':').map(Number);for(let i=pages.length-1;i>=0;i--)if(pages[i].chapter===c&&Number(pages[i].key.split(':')[1])<=n){found=i;break}}current=Math.max(0,found);if(desktop)current-=current%2}else if(current!==-1)current=0;buildJump();render()}
+function buildJump(){jump.innerHTML='<option value="-1">表紙</option>'+chapters.map((c,i)=>`<option value="${pages.findIndex(p=>p.chapter===i)}">${c.heading}</option>`).join('')+`<option value="${pages.length-1}">最後の言葉</option><option value="${pages.length}">署名・朱印</option>`}
+function render(){book.replaceChildren();const cover=current<0||current>=pages.length;book.className='book '+(desktop?'':'single')+(cover?' cover-mode':' '+(desktop?'spread':''));if(cover){book.innerHTML=coverHTML(current>=pages.length);book.firstElementChild.classList.add('appear','enter');if(current<0)book.firstElementChild.onclick=()=>{if(performance.now()>=ignoreClickUntil)turn(1)}}else{if(current===0&&preparedFirst){book.append(...preparedFirst);preparedFirst=null}else{book.append(leaf(pages[current],current,desktop?'left':''));if(desktop)book.append(leaf(pages[current+1],current+1,'right'))}book.querySelectorAll('.leaf').forEach(e=>{e.classList.add('appear');[...e.querySelector('.page-body').children].forEach((x,i)=>x.style.setProperty('--i',Math.min(i,6)))})}prev.disabled=sidePrev.disabled=current<0;next.disabled=sideNext.disabled=current>=pages.length;next.textContent=current<0?'開く ›':'次の頁 ›';pos.textContent=current<0?'表紙':current>=pages.length?'署名・朱印':`${current+1}${desktop&&current+1<pages.length?'–'+(current+2):''} / ${pages.length}`;bar.style.transform=`scaleX(${Math.max(0,Math.min(1,(current+1)/(pages.length+1)))})`;jump.value=current<0?-1:current>=pages.length?pages.length:pages[current]?.special?pages.length-1:pages.findIndex(p=>p.chapter===pages[current].chapter);document.querySelector('#hint').textContent=desktop?'紙面をクリック、または ← → キーで頁をめくる':'左右にスワイプ、またはボタンで頁をめくる';document.body.classList.toggle('no-motion',!enabled);document.body.dataset.scene=sceneNow()==='seal'?'ending':sceneNow();book.querySelectorAll('.question').forEach((el,i)=>el.style.setProperty('--q',Math.min(i,5)))}
+function turn(dir){stopCeremony();clearCinema();if(busy)stopTurn();let old=current;if(old<0&&dir<0||old>=pages.length&&dir>0)return;let target=old<0?0:old>=pages.length?Math.floor((pages.length-1)/(desktop?2:1))*(desktop?2:1):old+dir*(desktop?2:1);target=target<0?-1:Math.min(pages.length,target);if(target===old)return;const oldCover=old<0||old>=pages.length,newCover=target<0||target>=pages.length;let oldVisual=oldCover?book.firstElementChild?.cloneNode(true):null;const oldRect=oldCover?book.firstElementChild?.getBoundingClientRect():null;const openingRect=old<0?oldRect:null;current=target;render();if(!enabled)return;if(openingRect&&dir>0){openCeremony(openingRect);book.classList.add('opening-beat')}busy=true;const token=++serial;book.classList.add('turning');const extras=[];if(oldCover&&oldVisual){oldVisual.classList.remove('enter','appear','clickable');oldVisual.classList.add('cover-flip');if(oldRect){oldVisual.style.width=oldRect.width+'px';oldVisual.style.height=oldRect.height+'px'}if(dir<0)oldVisual.classList.add('backwards');book.append(oldVisual);extras.push(oldVisual)}else if(!newCover){if(desktop){const underidx=old+(dir<0?1:0);const under=leaf(pages[underidx],underidx,dir>0?'left underlay':'right underlay',false);book.append(under);extras.push(under)}const flap=document.createElement('div');flap.className='flap '+(dir>0?'next':'prev');const oldidx=old+(desktop&&dir>0?1:0),newidx=target+(desktop&&dir<0?1:0);flap.append(leaf(pages[oldidx],oldidx,'face front '+(desktop?(dir>0?'right':'left'):''),false),leaf(pages[newidx],newidx,'face back '+(desktop?(dir>0?'left':'right'):''),false));book.append(flap);extras.push(flap)}else{const cover=book.firstElementChild;cover.classList.remove('enter');void cover.offsetWidth;cover.classList.add('enter')}
+const finish=()=>{if(token!==serial)return;extras.forEach(e=>e.remove());book.classList.remove('turning');busy=false;cleanup=null};cleanup=finish;setTimeout(finish,550);if(dir>0)queueCinema(openingRect?500:newCover?500:560)}
+
+function syncMotion(){motion.setAttribute('aria-pressed',String(enabled));motion.setAttribute('aria-label',enabled?'演出をオフにする':'演出をオンにする');motion.querySelector('.motion-status').textContent=enabled?'ON':'OFF'}
+const tocDialog=document.getElementById('toc-dialog'),tocOpen=document.getElementById('toc-open'),tocList=document.getElementById('toc-list');
+tocOpen.onclick=()=>{tocList.replaceChildren();for(const opt of jump.options){const val=Number(opt.value);const btn=document.createElement('button');btn.type='button';const label=document.createElement('span');label.textContent=opt.textContent;const folio=document.createElement('span');folio.className='toc-folio';folio.textContent=val<0?'—':val>=pages.length?'—':String(val+1).padStart(2,'0');btn.append(label,folio);const currentChapter=current<0?val<0:current>=pages.length?val===pages.length:pages[current]?.special?val===pages.length-1:val===Number(jump.value);if(currentChapter)btn.setAttribute('aria-current','true');btn.onclick=()=>{tocDialog.close();jump.value=opt.value;jump.dispatchEvent(new Event('change'));};tocList.append(btn)}tocDialog.showModal();(tocList.querySelector('[aria-current=true]')||tocList.firstElementChild)?.focus()};
+document.getElementById('close-toc').onclick=()=>tocDialog.close();tocDialog.addEventListener('click',e=>{if(e.target===tocDialog){const r=tocDialog.getBoundingClientRect();if(e.clientX<r.left||e.clientX>r.right||e.clientY<r.top||e.clientY>r.bottom)tocDialog.close()}});
+
+prev.onclick=sidePrev.onclick=()=>turn(-1);next.onclick=sideNext.onclick=()=>turn(1);jump.onchange=()=>{stopCeremony();clearCinema();stopTurn();serial++;current=Number(jump.value);if(desktop&&current>=0&&current<pages.length)current-=current%2;render();queueCinema(0)};motion.onclick=()=>{stopCeremony();clearCinema();stopTurn();enabled=!enabled;syncMotion();serial++;render()};syncMotion();
+addEventListener('keydown',e=>{if(document.getElementById('toc-dialog').open)return;if(e.target.matches('select,input,textarea')||e.altKey||e.ctrlKey||e.metaKey)return;if(e.key==='ArrowRight'||e.key==='PageDown'){e.preventDefault();turn(1)}if(e.key==='ArrowLeft'||e.key==='PageUp'){e.preventDefault();turn(-1)}});
+let down=null;book.addEventListener('pointerdown',e=>{down=[e.clientX,e.clientY]});book.addEventListener('click',e=>{if(performance.now()<ignoreClickUntil||!desktop||e.target.closest('button,.cover,.flap,.underlay')||!getSelection()?.isCollapsed)return;if(down&&Math.hypot(e.clientX-down[0],e.clientY-down[1])>9)return;const l=e.target.closest('.leaf');if(l)turn(l.classList.contains('left')?-1:1)});
+let touch=null;book.addEventListener('touchstart',e=>{touch=[e.touches[0].clientX,e.touches[0].clientY]},{passive:true});book.addEventListener('touchend',e=>{if(!touch)return;const dx=e.changedTouches[0].clientX-touch[0],dy=e.changedTouches[0].clientY-touch[1];if(Math.abs(dx)>48&&Math.abs(dx)>Math.abs(dy)*1.3){ignoreClickUntil=performance.now()+450;turn(dx<0?1:-1)}touch=null},{passive:true});book.addEventListener('touchcancel',()=>{touch=null},{passive:true});let resize;addEventListener('resize',()=>{clearTimeout(resize);resize=setTimeout(layout,130)});layout();if(document.fonts?.status==='loading')document.fonts.ready.then(()=>{if(current<0&&!busy)layout()});
+</script></body></html>
